@@ -99,3 +99,10 @@ sys_getdate(void)
   cmostime(dp);
   return 0;
 }
+
+// kadai1
+int
+sys_sleep_sec(void){
+  // not implemented
+  return 0;
+}

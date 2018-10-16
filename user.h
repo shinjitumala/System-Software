@@ -24,6 +24,7 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 int getdate(struct rtcdate *); // kadai1
+int sleep_sec(int); // kadai1
 
 // ulib.c
 int stat(const char*, struct stat*);
