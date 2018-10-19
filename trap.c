@@ -8,11 +8,15 @@
 #include "traps.h"
 #include "spinlock.h"
 
+#include "sleeplock.h"
+
 // Interrupt descriptor table (shared by all CPUs).
 struct gatedesc idt[256];
 extern uint vectors[];  // in vectors.S: array of 256 entry pointers
 struct spinlock tickslock;
 uint ticks;
+
+struct sleeplock g_sleeplock; // kadai1
 
 void
 tvinit(void)
@@ -24,6 +28,7 @@ tvinit(void)
   SETGATE(idt[T_SYSCALL], 1, SEG_KCODE<<3, vectors[T_SYSCALL], DPL_USER);
 
   initlock(&tickslock, "time");
+  initsleeplock(&g_sleeplock, "sleeplock");
 }
 
 void

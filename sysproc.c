@@ -87,114 +87,94 @@ int sys_sleep_sec(void) {
     return -1;
 
   cmostime(&dp0);
+
+  // calculate the rtcdate after n seconds
+  dp0.second += n;
+  if (dp0.second >= 60) {
+    dp0.minute += dp0.second / 60;
+    dp0.second %= 60;
+    if (dp0.minute >= 60) {
+      dp0.hour += dp0.minute / 60;
+      dp0.minute %= 60;
+      if (dp0.hour >= 24) {
+        dp0.day = dp0.hour / 24;
+        dp0.hour %= 24;
+        int day_remaining = 1;
+
+        // day, month, year
+        while (day_remaining != 0) {
+          switch (dp0.month) {
+          case 2:
+            if (dp0.year % 4 != 0 ||
+                (dp0.year % 4 == 0 && dp0.year % 100 == 0 &&
+                 dp0.year % 400 != 0)) {
+              if (dp0.day > 28) {
+                dp0.day -= 28;
+                dp0.month++;
+              } else {
+                day_remaining = 0;
+              }
+            } else {
+              if (dp0.day > 29) {
+                dp0.day -= 29;
+                dp0.month++;
+              } else {
+                day_remaining = 0;
+              }
+            }
+            break;
+          case 1:
+          case 3:
+          case 5:
+          case 7:
+          case 8:
+          case 10:
+          case 12:
+            if (dp0.day > 31) {
+              dp0.day -= 31;
+              dp0.month++;
+            } else {
+              day_remaining = 0;
+            }
+            break;
+          case 4:
+          case 6:
+          case 9:
+          case 11:
+            if (dp0.day > 30) {
+              dp.day -= 30;
+              dp.month++;
+            } else {
+              day_remaining = 0;
+            }
+            break;
+          }
+        }
+      }
+    }
+  }
+
   int l = 0;
+  // sleep until the current rtcdate dp matches dp0
+  acquiresleep(&g_sleeplock);
   while (1) {
+    if (myproc()->killed) {
+      releasesleep(&g_sleeplock);
+      return -1;
+    }
+
     l++;
     l = l % 40;
     if (l == 0) {
       cmostime(&dp);
-
-      int delta = 0;
-      // year
-      if (dp.year != dp0.year) {
-        int i;
-        for (i = dp0.year; i != dp.year; i++) {
-          if (i % 4 != 0 || (i % 4 == 0 && i % 100 == 0 && i % 400 != 0)) {
-            delta += 31536000;
-          } else {
-            delta += 31622400;
-          }
-        }
-      }
-      // month
-      if (dp.month != dp0.month) {
-        int year = dp0.year;
-        int i;
-        for (i = dp0.month; i != dp.month;) {
-          switch (i) {
-          case 1:
-          case 3:
-          case 5:
-          case 7:
-          case 8:
-          case 10:
-          case 12:
-            delta += 2678400;
-            break;
-          case 4:
-          case 6:
-          case 9:
-          case 11:
-            delta += 2592000;
-            break;
-          case 2:
-            if (year % 4 != 0 ||
-                (year % 4 == 0 && year % 100 == 0 && year % 400 != 0)) {
-              delta += 2419200;
-            } else {
-              delta += 2505600;
-            }
-            break;
-          }
-
-          if (i == 12) {
-            i = 1;
-            year = dp.year;
-          } else
-            i++;
-        }
-      }
-      // day
-      if (dp0.day != dp.day) {
-        int year = dp0.year;
-        int month = dp0.month;
-        int i;
-        for (i = dp0.day; i != dp.day;) {
-          delta += 86400;
-
-          int max = 0;
-          switch (month) {
-          case 1:
-          case 3:
-          case 5:
-          case 7:
-          case 8:
-          case 10:
-          case 12:
-            max = 31;
-            break;
-          case 4:
-          case 6:
-          case 9:
-          case 11:
-            max = 30;
-            break;
-          case 2:
-            if (year % 4 != 0 ||
-                (year % 4 == 0 && year % 100 == 0 && year % 400 != 0)) {
-              max = 28;
-            } else {
-              max = 29;
-            }
-            break;
-          }
-
-          if (i == max) {
-            year = dp.year;
-            month = dp.month;
-            i = 1;
-          } else {
-            i++;
-          }
-        }
-      }
-      // hour, minute, second
-      delta += (dp.second - dp0.second) + (dp.minute - dp0.minute) * 60 +
-               (dp.hour - dp0.hour) * 3600;
-      if (delta >= n)
+      if (dp.second == dp0.second && dp.minute == dp0.minute &&
+          dp.hour == dp0.hour && dp.day == dp0.day && dp.month == dp0.month &&
+          dp.year == dp0.year) {
         break;
+      }
     }
   }
+  releasesleep(&g_sleeplock);
 
   return 0;
 }
