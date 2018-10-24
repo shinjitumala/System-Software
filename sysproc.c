@@ -155,26 +155,27 @@ int sys_sleep_sec(void) {
   }
 
   int l = 0;
-  // sleep until the current rtcdate dp matches dp0
-  acquiresleep(&g_sleeplock);
+  // sleep until the current rtcdate dp is ahead of dp0
+  acquire(&tickslock);
   while (1) {
     if (myproc()->killed) {
-      releasesleep(&g_sleeplock);
+      release(&tickslock);
       return -1;
     }
 
     l++;
     l = l % 40;
-    if (l == 0) {
+    if (l == 0) { // only call costime every 40 ticks to save resource
       cmostime(&dp);
-      if (dp.second == dp0.second && dp.minute == dp0.minute &&
-          dp.hour == dp0.hour && dp.day == dp0.day && dp.month == dp0.month &&
-          dp.year == dp0.year) {
+      if (dp.second >= dp0.second && dp.minute >= dp0.minute &&
+          dp.hour >= dp0.hour && dp.day >= dp0.day && dp.month >= dp0.month &&
+          dp.year >= dp0.year) {
         break;
       }
     }
+    sleep(&ticks, &tickslock);
   }
-  releasesleep(&g_sleeplock);
-
+  release(&tickslock);
+  
   return 0;
 }

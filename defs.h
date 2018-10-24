@@ -165,8 +165,6 @@ extern uint     ticks;
 void            tvinit(void);
 extern struct spinlock tickslock;
 
-extern struct sleeplock g_sleeplock; // kadai1
-
 // uart.c
 void            uartinit(void);
 void            uartintr(void);

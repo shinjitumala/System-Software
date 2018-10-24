@@ -1,0 +1,197 @@
+\documentclass[a4j,11pt]{jarticle}
+\usepackage{epsfig,here}
+\usepackage{url}
+
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings, jlisting}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+\colorlet{light-gray}{gray!20}
+
+\lstset{
+  %プログラム言語(複数の言語に対応，C,C++も可)
+  language = C,
+  %背景色と透過度
+  backgroundcolor={\color[gray]{.90}},
+  %枠外に行った時の自動改行
+  breaklines = true,
+  %自動開業後のインデント量(デフォルトでは20[pt])
+  breakindent = 10pt,
+  %標準の書体
+  basicstyle = \ttfamily\scriptsize,
+  %basicstyle = {\small}
+  %コメントの書体
+  commentstyle = {\itshape \color[cmyk]{1,0.4,1,0}},
+  %関数名等の色の設定
+  classoffset = 0,
+  %キーワード(int, ifなど)の書体
+  keywordstyle = {\bfseries \color[cmyk]{0,1,0,0}},
+  %""で囲まれたなどの"文字"の書体
+  % stringstyle = {\ttfamily \color[rgb]{0,0,1}},
+  %枠 "t"は上に線を記載, "T"は上に二重線を記載
+  %他オプション：leftline，topline，bottomline，lines，single，shadowbox
+  frame = TBrl,
+  %frameまでの間隔(行番号とプログラムの間)
+  framesep = 5pt,
+  %行番号の位置
+  numbers = left,
+  %行番号の間隔
+  stepnumber = 1,
+  %右マージン
+  %xrightmargin=0zw,
+  %左マージン
+  %xleftmargin=3zw,
+  %行番号の書体
+  numberstyle = \tiny,
+  %タブの大きさ
+  tabsize = 4,
+  %キャプションの場所("tb"ならば上下両方に記載)
+  captionpos = t,
+  showstringspaces=false
+}
+
+\setlength{\textwidth}{1.1\textwidth}
+\setlength{\oddsidemargin}{-3pt}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\topmargin}{10mm}
+\setlength{\headheight}{0mm}
+\setlength{\headsep}{0mm}
+
+\begin{document}
+
+\begin{center}
+%\noindent
+　\vspace{10mm}
+
+{\bf {\huge システムソフトウェア　小課題１: レポート}}
+%\end{center}
+
+\vspace{80mm}
+
+提出日：2018年10月26日
+
+\vspace{10mm}
+
+系／学科／類：情報工学系
+
+\vspace{10mm}
+
+学籍番号：16B13354
+
+\vspace{10mm}
+
+ログイン名：hoshino.s.af
+
+\vspace{20mm}
+
+{\bf {\LARGE 氏名：星野　シンジ}}
+\end{center}
+
+\newpage
+
+\section{sleep\_sec()システムコールの動作概要}
+
+まず、最初にcmostimeを用いて現在のrtcdate構造体を取得する。
+その上で、得られたrtcdateの構造体から引数秒後
+のrtcdate構造体を計算する。このrtcdate構造体は変数として持っておく。
+
+次に、実際にプロセスをスリープロックさせる部分だが、最初に
+tickslockをacquireしてスピンロックの確保している。
+そして、スピンロックを確保した後は、while文が４０回ループするごとにcmostimeで現在の時刻を確認し、
+先に計算した引数秒後のrtcdateと等しい、またはそれよりも未来になれば、while文を脱する
+ように実装した。また、ループする時に毎回sleepを呼び出している。
+
+最後に、while文を抜けた後は、releaseでtickslockを解放している。
+
+ソースコードの一部を図\ref{sleepsec}に示しておく。
+
+\begin{figure}[H]
+  \begin{lstlisting}
+    int sys_sleep_sec(void) {
+      int n;
+      struct rtcdate dp0, dp;
+
+      // returns error if the int argument was negative
+      if (argint(0, &n) < 0)
+        return -1;
+
+      cmostime(&dp0);
+
+      // calculate the rtcdate after n seconds
+      dp0.second += n;
+      // ... （長いので省略）
+
+      int l = 0;
+      // sleep until the current rtcdate dp is ahead of dp0
+      acquire(&tickslock);
+      while (1) {
+        if (myproc()->killed) {
+          release(&tickslock);
+          return -1;
+        }
+
+        l++;
+        l = l % 40;
+        if (l == 0) { // only call costime every 40 ticks to save resource
+          cmostime(&dp);
+          if (dp.second >= dp0.second && dp.minute >= dp0.minute &&
+              dp.hour >= dp0.hour && dp.day >= dp0.day && dp.month >= dp0.month &&
+              dp.year >= dp0.year) {
+            break;
+          }
+        }
+        sleep(&ticks, &tickslock);
+      }
+      release(&tickslock);
+
+      return 0;
+    }
+  \end{lstlisting}
+  \caption{sleep\_sec()システムコールのコード一部}
+  \label{sleepsec}
+\end{figure}
+
+\section{実装についての考察}
+
+sleep\_secのシステムコールが必要とする資源は、
+uint型のticksとspinlock構造体のtickslockである。
+それらを使用している間は、tickslockをaquireすることによって、
+排他制御をしている。
+従って、sleep\_secのシステムコールがOSの他の動作に影響を与えることは
+基本的にない。
+ただし、計算資源を使うので、それに関連する影響は生じる可能性がある。
+
+
+計算資源の利用ができるだけ少なくなるようにいくつか工夫した。
+
+
+まず、引数秒後のrtcdateの計算をする部分では、
+sleep\_sec()の引数が小さい場合に、無駄な計算をすることがないように、
+秒の計算から行なっている。
+具体的には、最初にrtcdateのsecondに引数を足す。その結果secondが60
+を超えていれば、minuteに60で割った商を加え、secondは余りとする。
+これと同じように、年まで計算することにより、秒より単位が大きい時間は
+必要がある時にだけ計算されるようになっている。
+
+
+次に、引数秒後の時間になるまでのwhile文については、
+cmostimeの実行に計算資源が多く必要であることを考慮し、
+40ticsk(約一秒)ごとにのみ、cmostimeを呼び出し及びループの抜け出しの条件確認をするようにしている。
+
+\section{実装までの経緯}
+
+スリープロックで引数秒間プロセスをスリープさせるsleep\_secシステムコールを
+実装するというのが今回の課題だった。
+よって、スリープロックがxv6のどこかに実装がないかを探すところから始め、
+sleepシステムコールを見つけた。
+すでに実装されているsleepシステムコールの引数をtick数ではなく、
+秒数に変更するという方針で実装を試みた。
+従って、sleep\_secシステムコールの基本的な構造は、sleepシステムコールと同じになり、
+rtcdate構造体とcmostimeの扱いが主な注目点となった。
+特に、引数秒後のrtcdate構造体の計算をする際に、うるう年等の処理のコードが最も長い。
+
+\end{document}
