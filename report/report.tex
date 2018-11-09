@@ -1,197 +1,365 @@
-\documentclass[a4j,11pt]{jarticle}
-\usepackage{epsfig,here}
+% template2.tex
+%
+% このソースファイルをコピーして自分のレポート内容にするとよい．
+%     $ cp template2.tex report2.tex
+
+% LaTeX一式を自分のパソコンにインストールするのであればTeXLiveをおすすめする．
+%     https://texwiki.texjp.org/?TeX%20Live
+% Macの場合はTeXLiveをMac向けにカスタマイズしたMacTeXがよい．
+%     https://texwiki.texjp.org/?MacTeX
+
+% コマンドラインでのLaTeXの使い方
+% 参考文献等の参照が正しく行われるよう，latexを2回実行する．
+% report3.dviができたら，dvipdfmxでPDFに変換する．
+%     $ platex report3
+%     $ platex report3
+%     $ dvipdfmx report3
+% これ以外にも日本語に対応したLaTeX処理系（lualatex等）を使ってもよい．
+
+% 文書スタイルの指定
+% 比較的ページ数の少ない講義レポートの場合，jreport ではなく jarticle がよい．
+% jsarticle が用意されていればそれを使ってもよい．
+% 用紙サイズはA4とする．オプションにa4ではなくa4jを指定した方が余白が適切になる．
+\documentclass[10pt,a4j]{jarticle}
+
+% 使用するパッケージの指定
+
+% 各種数学記号や数式を書くためのパッケージ．問答無用で入れておくとよい．
+\usepackage{amsmath,amssymb}
+% 旧版のLaTeXで用意されていた各種記号のためのパッケージ．
+% 時相論理の□(\Box)や◇(\Diamond)をバランスよく出すために必要．
+\usepackage{latexsym}
+
+% screen, itemboxを使うために必要
+\usepackage{ascmac}
+
+% urlを参照するのに便利
 \usepackage{url}
 
-\usepackage{color}
-\usepackage{xcolor}
-\usepackage{listings, jlisting}
+% プログラムの予約語をボールド（太字）にして目立たせると見やすい．残念ながら
+% LaTeXデフォルトの等幅フォント（\textttで出てくるフォント）はボールドにならないので，
+% 以下のいずれかのパッケージを使うとよい．
+\usepackage{courier}  % 等幅フォントとしてCourierフォントを使う
+% \usepackage{inconsolata} % 等幅フォントとしてInconsolataを使う
+% \usepackage[cmbtt]{bold-extra}  % CMフォントのタイプライター体のボールドを使う
 
-\definecolor{javared}{rgb}{0.6,0,0} % for strings
-\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
-\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
-\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
-\colorlet{light-gray}{gray!20}
-
-\lstset{
-  %プログラム言語(複数の言語に対応，C,C++も可)
-  language = C,
-  %背景色と透過度
-  backgroundcolor={\color[gray]{.90}},
-  %枠外に行った時の自動改行
-  breaklines = true,
-  %自動開業後のインデント量(デフォルトでは20[pt])
-  breakindent = 10pt,
-  %標準の書体
-  basicstyle = \ttfamily\scriptsize,
-  %basicstyle = {\small}
-  %コメントの書体
-  commentstyle = {\itshape \color[cmyk]{1,0.4,1,0}},
-  %関数名等の色の設定
-  classoffset = 0,
-  %キーワード(int, ifなど)の書体
-  keywordstyle = {\bfseries \color[cmyk]{0,1,0,0}},
-  %""で囲まれたなどの"文字"の書体
-  % stringstyle = {\ttfamily \color[rgb]{0,0,1}},
-  %枠 "t"は上に線を記載, "T"は上に二重線を記載
-  %他オプション：leftline，topline，bottomline，lines，single，shadowbox
-  frame = TBrl,
-  %frameまでの間隔(行番号とプログラムの間)
-  framesep = 5pt,
-  %行番号の位置
-  numbers = left,
-  %行番号の間隔
-  stepnumber = 1,
-  %右マージン
-  %xrightmargin=0zw,
-  %左マージン
-  %xleftmargin=3zw,
-  %行番号の書体
-  numberstyle = \tiny,
-  %タブの大きさ
-  tabsize = 4,
-  %キャプションの場所("tb"ならば上下両方に記載)
-  captionpos = t,
-  showstringspaces=false
+% 文書にプログラムリストを入れたいときに便利
+\usepackage{listings}
+% listingsパッケージのデフォルトを設定する
+\lstset{%
+  language={C},             % 言語をCにする
+  basicstyle={\ttfamily},   % プログラムの基本スタイルは等幅(tt)とする
+  keywordstyle={\bfseries}, % 予約語は太字(bf)にする
+  numbers=left,             % 左側に行番号を入れる
+  frame=single,             % 枠で囲む
+  lineskip=-0.75ex,         % プログラムリストの改行幅を少し小さくする
+  captionpos=b              % キャプションの位置をプログラムの下にする
 }
+\def\lstlistingname{プログラム}
 
-\setlength{\textwidth}{1.1\textwidth}
-\setlength{\oddsidemargin}{-3pt}
-\setlength{\evensidemargin}{\oddsidemargin}
-\setlength{\topmargin}{10mm}
-\setlength{\headheight}{0mm}
-\setlength{\headsep}{0mm}
+% includegraphics で文書に図を入れたいときに必要
+% dvipdfmx
+\usepackage[dvipdfmx]{graphicx}
+
+
+% 他に必要なパッケージがあったらここに追加する．
+
+% 文書のタイトル
+% レポートの場合は科目名と課題名
+\title{システムソフトウェア・小課題2}
+
+% 学籍番号と氏名（自分の学籍番号と氏名）
+\author{16-9999-9・情工 太郎}
+
+% 提出日(締切日ではなく実際の提出日)
+\date{2018年11月X日}
+
+% 本文の開始
 
 \begin{document}
 
-\begin{center}
-%\noindent
-　\vspace{10mm}
+\maketitle
 
-{\bf {\huge システムソフトウェア　小課題１: レポート}}
-%\end{center}
+\section{xv6のスピンロック実装における\texttt{xchg}の役割について}
 
-\vspace{80mm}
+\subsection{\texttt{xchg}を使用せず，CPUコア数を1として実行した結果}
 
-提出日：2018年10月26日
+% spinlock.c で定義されている関数 acquire 中の32-33行目を以下のように変更してxv6をビルドする．
+%   while (lk->locked != 0)
+%     ;
+%   lk->locked = 1;
 
-\vspace{10mm}
+% CPUコア数を1にして実行した結果を載せる．実行結果のスクリーンショットは
+%     make CPUS=1 qemu-nox
+% で実行した結果をターミナルからコピー&ペーストし，verbatim環境で囲めばよい．
+% さらにscreen環境で囲むと実行結果らしくなる．
 
-系／学科／類：情報工学系
+% 以下は変更を加えていないxv6の起動例
+\begin{screen}
+\begin{verbatim}
+cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=1
+Booting from Hard Disk..xv6...
+cpu0: starting 0
+sb: size 1000 nblocks 941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
+init: starting sh
+$
+\end{verbatim}
+\end{screen}
 
-\vspace{10mm}
+実行結果は、上のようになり、コア数１では正常に起動した。
 
-学籍番号：16B13354
+次に、usertestを実行してみた結果が以下の通りである。
 
-\vspace{10mm}
+\begin{screen}
+    \begin{verbatim}
+      $ usertests
+      usertests starting
+      ...(中略)...
+      ALL TESTS PASSED
+      $
+    \end{verbatim}
+\end{screen}
+% xv6が正常に起動しているようであれば，適当なプログラムを実行した結果を載せる．
 
-ログイン名：hoshino.s.af
+\subsection{CPUコア数を2以上にして実行した結果}
 
-\vspace{20mm}
+% 以下のようにCPUコア数を2以上にして実行した結果を載せる．
+%   make CPUS=2 qemu-nox
+%   make CPUS=3 qemu-nox
+%          :
+%   make CPUS=8 qemu-nox
 
-{\bf {\LARGE 氏名：星野　シンジ}}
-\end{center}
+% 実行結果が同様であればスクリーンショット等は適宜省略してよい．
+% xv6が正常に起動しているようであれば，適当なプログラムを実行した結果を載せる．
+\begin{screen}
+  \begin{verbatim}
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=2
+    Booting from Hard Disk..xv6...
+    cpu1: starting 1
+    QEMU: Terminated
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=3
+    Booting from Hard Disk..xv6...
+    cpu1: starting 1
+    cpu2: starting 2
+    QEMU: Terminated
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=4
+    Booting from Hard Disk..xv6...
+    cpu1: starting 1
+    cpu2: starting 2
+    cpu3: starting 3
+    QEMU: Terminated
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=5
+    ...(中略)...
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=8
+    Booting from Hard Disk..xv6...
+    cpu1: starting 1
+    cpu2: starting 2
+    cpu3: starting 3
+    cpu4: starting 4
+    cpu5: starting 5
+    cpu6: starting 6
+    cpu7: starting 7
+    cpu0: starting 0
+    QEMU: Terminated
+    cs-mac80:System-Software hoshino.s.af$
+  \end{verbatim}
+\end{screen}
 
-\newpage
+結果として、CPUコア数が２以上になると、３０秒ほど待ったとしても、
+最後の１個のコアが起動をせずに止まったままになってしまう。
+何度か起動しようとしていると、CPUコア数が５以上の時には時々、
+cpu0が起動することがあるが、それが起動したとしても、固まったまま動かなかった。
 
-\section{sleep\_sec()システムコールの動作概要}
+\subsection{上記の結果になった理由}
 
-まず、最初にcmostimeを用いて現在のrtcdate構造体を取得する。
-その上で、得られたrtcdateの構造体から引数秒後
-のrtcdate構造体を計算する。このrtcdate構造体は変数として持っておく。
+% 上記のような結果を得た理由について調査し，その結果を書く．
+% 例えば正常に起動しなかった場合，ソースコード中のどの部分でどのような理由で
+% エラーになったか等を調べる．その際にデバッガによる実行結果を掲載してもよい．
 
-次に、実際にプロセスをスリープロックさせる部分だが、最初に
-tickslockをacquireしてスピンロックの確保している。
-そして、スピンロックを確保した後は、while文が４０回ループするごとにcmostimeで現在の時刻を確認し、
-先に計算した引数秒後のrtcdateと等しい、またはそれよりも未来になれば、while文を脱する
-ように実装した。また、ループする時に毎回sleepを呼び出している。
+上記の結果をまとめると、CPUコア数が１より大きい時に問題が生じるということだった。
+その原因としては、スピンロックの状態を確認する　lk->locked != 0 という行と
+　lk->locked = 1; という行が別々のCPUで別々に実行される可能性が存在することである。
+複数のCPUでlk->lockedが０であることを確認した後に、同時にlk->lockedを1してしまうと、
+ロックを複数のCPUで確保することになり、デッドロックが起こる。
 
-最後に、while文を抜けた後は、releaseでtickslockを解放している。
+逆に、xchgを呼び出している時は、アセンブリ命令でxchgを用いている。
+x86におけるxchg命令を用いると、ハードウェアにロックをさせることができ\cite{xchg}、
+そのことを用いて、ロックの確保を確実に一つのCPUしかできないようにしている。
 
-ソースコードの一部を図\ref{sleepsec}に示しておく。
-
-\begin{figure}[H]
-  \begin{lstlisting}
-    int sys_sleep_sec(void) {
-      int n;
-      struct rtcdate dp0, dp;
-
-      // returns error if the int argument was negative
-      if (argint(0, &n) < 0)
-        return -1;
-
-      cmostime(&dp0);
-
-      // calculate the rtcdate after n seconds
-      dp0.second += n;
-      // ... （長いので省略）
-
-      int l = 0;
-      // sleep until the current rtcdate dp is ahead of dp0
-      acquire(&tickslock);
-      while (1) {
-        if (myproc()->killed) {
-          release(&tickslock);
-          return -1;
-        }
-
-        l++;
-        l = l % 40;
-        if (l == 0) { // only call costime every 40 ticks to save resource
-          cmostime(&dp);
-          if (dp.second >= dp0.second && dp.minute >= dp0.minute &&
-              dp.hour >= dp0.hour && dp.day >= dp0.day && dp.month >= dp0.month &&
-              dp.year >= dp0.year) {
-            break;
-          }
-        }
-        sleep(&ticks, &tickslock);
-      }
-      release(&tickslock);
-
-      return 0;
-    }
-  \end{lstlisting}
-  \caption{sleep\_sec()システムコールのコード一部}
-  \label{sleepsec}
+従って、ロックの確保をハードウェアレベルで排他していないと正しく実装できないということである。
+%
+% % 説明にソースコードやその一部が必要な場合は，以下のようにする．
+% \begin{lstlisting}
+% static inline uint
+% xchg(volatile uint *addr, uint newval)
+% {
+%   uint result;
+%
+%   // The + in "+m" denotes a read-modify-write operand.
+%   asm volatile("lock; xchgl %0, %1" :
+%                "+m" (*addr), "=a" (result) :
+%                "1" (newval) :
+%                "cc");
+%   return result;
+% }
+% \end{lstlisting}
+%
+% % 説明に図が必要な場合は以下のようにする．
+% % 図は適当な作図ツールで作成し，PDF, PNG, SVG等として出力したものを用いるとよい．
+\begin{figure}
+\centering % 図をセンタリングする
+% proc.pdf というファイルを図として挿入している．
+% （この例では図の幅を文書の幅の半分にしている）
+\includegraphics[width=0.5\textwidth]{proc.pdf}
+% figure環境を使う場合は図にキャプションをつけること．
+% また，\labelコマンドでキャプションに適当なラベル（この例ではfig:xv6proc）を
+% つけて，本文中で参照するのに用いる（例えば \ref{fig:xv6proc} が図の番号になる）．
+\caption{xv6のプロセスの状態}\label{fig:xv6proc}
 \end{figure}
 
-\section{実装についての考察}
 
-sleep\_secのシステムコールが必要とする資源は、
-uint型のticksとspinlock構造体のtickslockである。
-それらを使用している間は、tickslockをaquireすることによって、
-排他制御をしている。
-従って、sleep\_secのシステムコールがOSの他の動作に影響を与えることは
-基本的にない。
-ただし、計算資源を使うので、それに関連する影響は生じる可能性がある。
+\section{xv6のスピンロック実装における割込みの扱いについて}
+
+\subsection{\texttt{pushcli}/\texttt{popcli}を削除した場合の実行結果}
+
+% acquireとreleaseにおけるpushcliおよびpopcliの呼び出しを削除（コメントアウト）して
+% ビルドし，CPUコア数をいろいろ変えて実行した結果を載せる
+
+\begin{screen}
+  \begin{verbatim}
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=1
+    Booting from Hard Disk..xv6...
+    cpu0: starting 0
+    lapicid 0: panic: mycpu called with interrupts enabled
+
+     8010328f 80103d8d 80103585 80102a74 80102bb1 0 0 0 0 0QEMU: Terminated
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=2
+    Booting from Hard Disk..xv6...
+    cpu1: starting 1
+    lapicid 1: panic: mycpu called with interrupts enabled
+
+      8010328f 80103d8d 80103585 80102a74 80102a8e 705a 0 0 0 0
+    ...(中略)...
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=8
+    Booting from Hard Disk..xv6...
+    cpu1: starting 1
+    lapicid 1: panic: mycpu called with interrupts enabled
+
+     8010328f 80103d8d 80103585 80102a74 80102a8e 705a 0 0 0 0QEMU: Terminated
+    cs-mac80:System-Software hoshino.s.af$
+  \end{verbatim}
+\end{screen}
+
+実行結果は、上のようにpanicが呼び出され、CPUコア数に依らず、起動しない状態になってしまった。
+
+\subsection{\texttt{pushcli}/\texttt{popcli}をそれぞれ\texttt{cli}/\texttt{sti}に置き換えた場合の実行結果}
+
+% acquireとreleaseにおけるpushcliおよびpopcliの呼び出しをcliおよびsitに置き換えて
+% ビルドし，CPUコア数をいろいろ変えて実行した結果を載せる
+
+\begin{screen}
+  \begin{verbatim}
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=1
+    Booting from Hard Disk..xv6...
+
+    (チラつき)
+    press Ctrl-B to configure iPXE (PCI 00:03.0)...
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=2
+    QEMU: Terminated
+    Booting from Hard Disk..xv6...
+    cpu1: starting 1
+    lapicid 1: panic: mycpu called with interrupts enabled
+
+     8010328f 80102a61 80102a8e 705a 0 0 0 0 0 0QEMU: Terminated
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=3
+    Booting from Hard Disk..xv6...
+    cpu1: starting 1
+    lapicid 1: panic: mycpu called with interrupts enabled
+
+     8010328f 80102a61 80102a8e 705a 0 0 0 0 0 0QEMU: Terminated
+    ...(中略)...
+    cs-mac80:System-Software hoshino.s.af$ make qemu-nox CPUS=8
+    Booting from Hard Disk..xv6...
+    cpu1: starting 1
+    lapicid 1: panic: mycpu called with interrupts enabled
+
+     8010328f 80102a61 80102a8e 705a 0 0 0 0 0 0QEMU: Terminated
+    cs-mac80:System-Software hoshino.s.af$
+  \end{verbatim}
+\end{screen}
+
+CPUコア数が１の時は、"Booting from Hard Disk..xv6..."まで表示され、
+"press Ctrl-B to configure iPXE (PCI 00:30.0)..."だと思われる文字列が
+チラついて表示された。
+
+一方で、CPUコア数が２以上の時は、panicが呼び出されて、起動しなかった。
+
+\subsection{上記の結果になった理由}
+
+% 上記のような結果を得た理由について調査し，その結果を書く．
+% 例えば正常に起動しなかった場合，ソースコード中のどの部分でどのような理由で
+% エラーになったか等を調べる．その際にデバッガによる実行結果を掲載してもよい．
+
+まず、pushcliとpopcliをコメントアウトした時の実行結果について説明する。
+
+pushcliとpopcliは、割り込み禁止を管理している。
+もし、あるhogeというプロセスがlock0というロックを確保したあとに、
+fogeというもう一つのプロセスが割り込みをし、lock0のロックを確保しようとすると、
+hogeは割り込まれた状態のままで実行されず、lock0を解放できないので、
+fogeもlock0の解放を待ち、デッドロックに繋がる状況になってしまう。
+よって、pushcliとpopcliを用いてロックを確保する時に割り込みを禁止する必要があるが、
+それをコメントアウトするとデッドロックが生じるはずである。今回、出力の結果としては、
+panicが呼び出されるということだったが、それはxv6側で不本意な割り込みに対してエラー処理を
+しているからである。
 
 
-計算資源の利用ができるだけ少なくなるようにいくつか工夫した。
+次に、pushcliとpopcliをそれぞれcliとstiにした時の実行結果について説明する。
 
+cliとstiは、それぞれ割り込みを禁止、許可するハードウェア命令である。
+pushcliとpopcliを用いているときは、pushcliを呼び出した回数だけpopcliを
+呼び出さないと割り込みの禁止が解放されないという実装になっている\cite{doc}。
+従って、cliとstiを代わりに使用した場合、一つのCPUで複数のプロセスがロックを
+確保している時に、ロックの確保で正しく割り込みが禁止されるが、プロセスのうちの
+一つでもロックを解放すると、割り込み許可状態になり、ロックを確保したプロセスが
+割り込まれてデッドロックが起きる危険性が生じる。それにより、pushcliとpopcliを
+コメントアウトした時と同じような現象が起こる。
 
-まず、引数秒後のrtcdateの計算をする部分では、
-sleep\_sec()の引数が小さい場合に、無駄な計算をすることがないように、
-秒の計算から行なっている。
-具体的には、最初にrtcdateのsecondに引数を足す。その結果secondが60
-を超えていれば、minuteに60で割った商を加え、secondは余りとする。
-これと同じように、年まで計算することにより、秒より単位が大きい時間は
-必要がある時にだけ計算されるようになっている。
+\section{感想・意見}
 
+% もし感想や意見があればここに書く．考察と感想は異なるので注意．
+% なければ無理に書く必要はないが，もし講義をより良くするための建設的な意見が
+% あったら遠慮なく書いていただきたい．
+% レポートの採点とは無関係であることを約束する．
 
-次に、引数秒後の時間になるまでのwhile文については、
-cmostimeの実行に計算資源が多く必要であることを考慮し、
-40ticsk(約一秒)ごとにのみ、cmostimeを呼び出し及びループの抜け出しの条件確認をするようにしている。
+% 参考文献の例
+% 参考にした図書・雑誌記事・論文やwebサイト等を明記する．
+% 各文献情報は，他人が参照できるよう，以下の情報を明記すること．
+% 図書: 著者, タイトル, 出版社, 出版年
+% 雑誌記事: 著者, タイトル, 誌名, 号, ページ(開始ページと終了ページ), 出版社, 出版年
+% webサイト: 著者, タイトル, URL, アクセスした年月日, 書かれた年月日等
 
-\section{実装までの経緯}
+\begin{thebibliography}{10}
 
-スリープロックで引数秒間プロセスをスリープさせるsleep\_secシステムコールを
-実装するというのが今回の課題だった。
-よって、スリープロックがxv6のどこかに実装がないかを探すところから始め、
-sleepシステムコールを見つけた。
-すでに実装されているsleepシステムコールの引数をtick数ではなく、
-秒数に変更するという方針で実装を試みた。
-従って、sleep\_secシステムコールの基本的な構造は、sleepシステムコールと同じになり、
-rtcdate構造体とcmostimeの扱いが主な注目点となった。
-特に、引数秒後のrtcdate構造体の計算をする際に、うるう年等の処理のコードが最も長い。
+% 各文献の記述は \bibitem{キーワード} で始める．
+% キーワードは，本文中で文献を参照するときに用いる．
+% 具体的には，\cite{キーワード} のようにすると，この部分が文献番号になる．
+
+\bibitem{xv6}
+Russ Cox, Frans Kaashoek \& Robert Morris,
+``xv6, a simple Unix-like teaching operating system'', Sep., 2018,
+\url{https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf}.
+
+\bibitem{xchg}
+Intel,
+``Intel® 64 and IA-32 Architectures Software Developer's Manual, page 2396 and 2397'', Nov., 2018,
+\url{https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf}
+
+\bibitem{doc}
+Russ Cox, Frans Kaashoek \& Robert Morris,
+``xv6, a simple Unix-like teaching operating system'', page 54, Nov., 2018,
+\url{https://pdos.csail.mit.edu/6.828/2014/xv6/book-rev8.pdf}
+
+\end{thebibliography}
+
 
 \end{document}
