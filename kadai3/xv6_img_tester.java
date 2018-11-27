@@ -1,42 +1,49 @@
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.io.IOException;
-import java.io.File;
-import java.io.FileInputStream;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 
 public class xv6_img_tester {
+  private static int error_count = 0;
+
   public static void main(String[] args) {
     if (args.length != 1) {
-      System.out.println("Usage: java xv6_img_tester <path to xv6 img file>");
-      System.exit(1);
+      try {
+        for (int i = 1; i < 13; i++) {
+          String path = "sample\\fs" + extend(i) + ".img";
+          xv6_img_file test_file = new xv6_img_file(path);
+          System.out.println("sample\\fs" + extend(i) + ".img:");
+          System.out.println(test_file);
+          System.out.println("Found " + error_count + " errors.");
+          System.out.println();
+          error_count = 0;
+        }
+      } catch (IOException | InterruptedException e) {
+        System.err.println("Error reading file!");
+        e.printStackTrace();
+        System.exit(1);
+      }
+    } else {
+
+      xv6_img_file test_file = null;
+      try {
+        test_file = new xv6_img_file(args[0]);
+      } catch (IOException | InterruptedException e) {
+        System.out.println("Error reading file!");
+        System.exit(1);
+      }
+      System.out.println(test_file);
+
+      System.out.println("Found " + error_count + " errors.");
     }
+  }
 
-    byte[] bytes = null;
-    try {
-      File file = new File(args[0]);
-      FileInputStream fis = new FileInputStream(file);
-      bytes = new byte[(int)file.length()];
-      fis.read(bytes);
+  public static void error() {
+    error_count++;
+  }
 
-      ByteBuffer bb = ByteBuffer.wrap(bytes);
-      bb.order(ByteOrder.LITTLE_ENDIAN);
-
-      System.out.println(bb.getInt());
-    } catch (IOException e) {
-      System.out.println("Error reading file!");
-      System.exit(1);
+  public static String extend(int i) {
+    if (i < 10) {
+      return "0" + i;
+    } else {
+      return "" + i;
     }
-    // int i = 0;
-    // for (byte b : bytes) {
-    //   System.out.print(0xff & b);
-    //   if(++i == 512){
-    //     System.out.println("");
-    //     i = 0;
-    //   }else{
-    //     System.out.print(" ");
-    //   }
-    // }
   }
 }
