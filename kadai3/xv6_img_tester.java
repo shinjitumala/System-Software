@@ -1,27 +1,51 @@
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class xv6_img_tester {
-  private static int error_count = 0;
-
   public static void main(String[] args) {
     if (args.length != 1) {
+      // test all .img files
       try {
         for (int i = 1; i < 13; i++) {
           String path = "sample\\fs" + extend(i) + ".img";
+          // System.err.close();
           xv6_img_file test_file = new xv6_img_file(path);
-          System.out.println("sample\\fs" + extend(i) + ".img:");
-          System.out.println(test_file);
-          System.out.println("Found " + error_count + " errors.");
-          System.out.println();
-          error_count = 0;
+          // System.out.println(test_file);
         }
       } catch (IOException | InterruptedException e) {
         System.err.println("Error reading file!");
         e.printStackTrace();
         System.exit(1);
       }
-    } else {
 
+    } else if (args[0].equals("raw")) {
+      // output raw data of all .img files
+      try {
+        for (int i = 1; i < 13; i++) {
+          String path = "sample\\fs" + extend(i) + ".img";
+          String output_path = "output\\fs" + extend(i) + "_raw.txt";
+          PrintWriter file = new PrintWriter(output_path);
+          // System.err.close();
+          xv6_img_file test_file = new xv6_img_file(path);
+          file.println(path + ":");
+          for (int k = 0; k < 1000; k++) {
+            long[] data = test_file.get_block_as_long(k);
+            for (long l : data) {
+              file.print(l + " ");
+            }
+            file.println();
+          }
+          file.println();
+          file.close();
+        }
+      } catch (IOException | InterruptedException e) {
+        System.err.println("Error reading file!");
+        e.printStackTrace();
+        System.exit(1);
+      }
+
+    } else {
+      // test a specific .img file.
       xv6_img_file test_file = null;
       try {
         test_file = new xv6_img_file(args[0]);
@@ -30,13 +54,7 @@ public class xv6_img_tester {
         System.exit(1);
       }
       System.out.println(test_file);
-
-      System.out.println("Found " + error_count + " errors.");
     }
-  }
-
-  public static void error() {
-    error_count++;
   }
 
   public static String extend(int i) {

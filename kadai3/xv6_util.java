@@ -11,7 +11,7 @@ public class xv6_util {
 
   /**
    * Changes signed short to unsigned short
-   * 
+   *
    * @param i Signed short
    * @return Unsigned short but the type is integer
    */
