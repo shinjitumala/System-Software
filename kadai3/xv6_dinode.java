@@ -1,8 +1,10 @@
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
 
 public class xv6_dinode {
   public static final int DINODE_SIZE = 64;
 
+  // dinode data
   public final int    type;
   public final int    major;
   public final int    minor;
@@ -10,59 +12,24 @@ public class xv6_dinode {
   public final long   size;
   public final long[] addrs;
 
+  // dinode analyzed data
   public boolean unused;
   public boolean invalid;
+  public int     directory_links = 0;
+
+  // dinode directory data
+  public ArrayList<xv6_dirent> dirents = new ArrayList<>();
+  public int                   parent_inode         = 0;
 
   public xv6_dinode(ByteBuffer bb, xv6_img_file img) {
-    boolean unused = false;
-    boolean invalid = false;
     type = xv6_util.unsign_short(bb.getShort());
-    // if ((type != 1) && (type != 2) && (type != 3)) {
-    // if (type == 0) {
-    // unused = true;
-    // } else {
-    // System.err.println("xv6_dinode: 'type' error.");
-    // invalid = true;
-    // }
-    // }
-
     major = xv6_util.unsign_short(bb.getShort());
-    // if ((major != 0) && unused && !invalid) {
-    // System.err.println("xv6_dinode: unused 'major' error.");
-    // invalid = true;
-    // }
-
     minor = xv6_util.unsign_short(bb.getShort());
-    // if ((minor != 0) && unused && !invalid) {
-    // System.err.println("xv6_dinode: unused 'minor' error.");
-    // invalid = true;
-    // }
-
     nlink = xv6_util.unsign_short(bb.getShort());
-    // if ((nlink != 0) && unused && !invalid) {
-    // System.err.println("xv6_dinode: unused 'nlink' error.");
-    // invalid = true;
-    // }
-
     size = xv6_util.unsign_int(bb.getInt());
-    // if ((size != 0) && unused && !invalid) {
-    // System.err.println("xv6_dinode: unused 'size' error.");
-    // invalid = true;
-    // }
-
     addrs = new long[13];
     for (int i = 0; i < 13; i++) {
       addrs[i] = xv6_util.unsign_int(bb.getInt());
-      // if ((addrs[i] != 0) && unused && !invalid) {
-      // System.err.println("xv6_dinode: unused 'addrs' error.");
-      // invalid = true;
-      // }
-    }
-
-    this.unused = unused;
-    this.invalid = invalid;
-    if (invalid) {
-      img.block_data_error++;
     }
   }
 
