@@ -7,7 +7,7 @@ public class xv6_img_tester {
       // test all .img files
       try {
         for (int i = 1; i < 13; i++) {
-          String path = "sample\\fs" + extend(i) + ".img";
+          String path = "sample/fs" + extend(i) + ".img";
           // System.err.close();
           xv6_img_file test_file = new xv6_img_file(path);
           // System.out.println(test_file);
@@ -22,8 +22,8 @@ public class xv6_img_tester {
       // output raw data of all .img files
       try {
         for (int i = 1; i < 13; i++) {
-          String path = "sample\\fs" + extend(i) + ".img";
-          String output_path = "output\\fs" + extend(i) + "_raw.txt";
+          String path = "sample/fs" + extend(i) + ".img";
+          String output_path = "output/fs" + extend(i) + "_raw.txt";
           PrintWriter file = new PrintWriter(output_path);
           // System.err.close();
           xv6_img_file test_file = new xv6_img_file(path);
