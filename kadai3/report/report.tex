@@ -1,0 +1,219 @@
+\documentclass[a4j,11pt]{jarticle}
+\usepackage{epsfig,here}
+\usepackage{url}
+
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings, jlisting}
+
+% \definecolor{javared}{rgb}{0.6,0,0} % for strings
+% \definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+% \definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+% \definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+% \colorlet{light-gray}{gray!20}
+%
+\lstset{
+  %プログラム言語(複数の言語に対応，C,C++も可)
+  % language = Java,
+  %背景色と透過度
+  backgroundcolor={\color[gray]{.90}},
+  %枠外に行った時の自動改行
+  breaklines=true,
+  %自動開業後のインデント量(デフォルトでは20[pt])
+  breakindent = 10pt,
+  %標準の書体
+  basicstyle = \ttfamily\scriptsize,
+  %basicstyle = {\small}
+  %コメントの書体
+  commentstyle = {\itshape \color[cmyk]{1,0.4,1,0}},
+  %関数名等の色の設定
+  classoffset = 0,
+  %キーワード(int, ifなど)の書体
+  keywordstyle = {\bfseries \color[cmyk]{0,1,0,0}},
+  %""で囲まれたなどの"文字"の書体
+  % stringstyle = {\ttfamily \color[rgb]{0,0,1}},
+  %枠 "t"は上に線を記載, "T"は上に二重線を記載
+  %他オプション：leftline，topline，bottomline，lines，single，shadowbox
+  frame = shadowbox,
+  %frameまでの間隔(行番号とプログラムの間)
+  framesep = 5pt,
+  %行番号の位置
+  % numbers = left,
+  %行番号の間隔
+  % stepnumber = 1,
+  %右マージン
+  %xrightmargin=0zw,
+  %左マージン
+  %xleftmargin=3zw,
+  %行番号の書体
+  numberstyle = \tiny,
+  %タブの大きさ
+  tabsize = 4,
+  %キャプションの場所("tb"ならば上下両方に記載)
+  captionpos = t,
+  showstringspaces=false
+}
+
+\setlength{\textwidth}{1.1\textwidth}
+\setlength{\oddsidemargin}{-3pt}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\topmargin}{10mm}
+\setlength{\headheight}{0mm}
+\setlength{\headsep}{0mm}
+
+\begin{document}
+
+\begin{center}
+%\noindent
+　\vspace{10mm}
+
+{\bf {\huge システムソフトウェア　大課題}}
+%\end{center}
+
+\vspace{80mm}
+
+提出日：2018年12月3日
+
+\vspace{10mm}
+
+系／学科／類：情報工学系
+
+\vspace{10mm}
+
+学籍番号：16B13354
+
+\vspace{10mm}
+
+ログイン名：hoshino.s.af
+
+\vspace{20mm}
+
+{\bf {\LARGE 氏名：星野　シンジ}}
+\end{center}
+
+\newpage
+
+\section{テストプログラムの実装}
+
+スーパーブロックに関する一貫性、ブロックの使用状況に関する一貫性、
+inodeに関する一貫性、ディレクトリに関する一貫性をすべて実装した。
+ソースコードは、全てsrcフォルダ内に入れた。
+
+テストの結果のまとめは、標準出力に出力され、
+個々のエラーは標準エラーに出力されるので、
+リダイレクトを適切に用いて、見たい情報を分けられる。
+今回のテストの実行結果は、標準出力のものをtest08.txtとして、
+標準出力と標準エラーをまとめたものは、test08\_extended.txtとして
+zipファイルに含めている。
+
+実行するときの引数で、動作が異なる。
+引数なしで実行すれば、
+sampleフォルダ内にあるfs01.imgからfs12.imgまで
+のイメージファイルを自動的にテストし、
+標準出力と標準エラーに結果を出力する。
+
+"raw"を引数として与えれば、
+sampleフォルダ内にあるfs01.imgからfs12.imgまで
+のイメージファイルの中身を４バイトずつ読み込み、
+unsigned intとして、1ブロック1行でファイル出力する。
+ファイルは、output\\fs01\_raw.txtという形式で
+各イメージファイルについて出力される。
+
+イメージファイルへのパスを引数として与えれば、
+そのイメージファイル単独のテストを行い、
+結果を標準出力と標準エラー
+に出力する。
+
+\section{実行結果}
+
+テスト結果のまとめは、標準出力に出力し、より細かいエラー原因は
+標準エラーに出力した。
+以下に、標準出力に出された結果を示す。
+
+\lstinputlisting{test07.txt}
+
+ここで、細かいエラーメッセージで分かったことに基づいて、
+各イメージファイルについて、どこが壊れているか以下で説明する。
+
+\subsection*{fs01.img}
+
+スーパーブロックのinodestartが間違っているために、連鎖的にファイルの読み込みで
+エラーが起きている。
+
+\subsection*{fs02.img}
+
+bmapに一か所誤りが存在する。bmapでは、600番目のブロックが使用済み
+ということになっているが、どのinodeにも参照されていない。
+
+\subsection*{fs03.img}
+
+エラーはなく、一貫性を保てている。
+
+\subsection*{fs04.img}
+
+一つのinodeに誤りがあり、bmapで未使用になっているブロックを一か所差している。
+誤りのあるinodeは、それ以降のテストで除外されてしまうので、
+それ以外のエラーは、そのinodeが除外されたことから生じている。
+
+\subsection*{fs05.img}
+
+スーパーブロックのsizeの値が破壊されている。
+データブロックの範囲を$size - nblocks$で計算しているために、
+連鎖的にほかの部分でもエラーが生じている。
+
+\subsection*{fs06.img}
+
+スーパーブロックのninodesの値が間違っている。
+そのため、テストプログラムでは、inodeに必要なブロック数から計算されたbmapstartと
+実際のbmapstartにずれが生じ、bmapstartでエラーがあるという報告になった。
+更に、bmapブロックの内容をinodeとして解釈するので、inodeのエラーも大量に発生した。
+
+\subsection*{fs07.img}
+
+1つのinodeのsizeが間違っている。
+副作用は、fs04.imgと同じ理由で生じており、
+inodeのエラーが検知されるとそれ以降のテストでは、
+そのinodeは除外されるから、ほかのエラーも現れている。
+
+\subsection*{fs08.img}
+
+検知されているエラーは、１つ目がブロック61がbmapで使用済みになっているのに、
+どのinodeにも参照されていない、２つ目がブロック63が複数のinodeから
+参照されているということであった。
+
+このことから、１つのinodeの参照するブロックがは破壊され、
+61から63に変更されたということが考えられる。
+
+\subsection*{fs09.img}
+
+１つのinodeのnlinkの値が間違っている。
+
+\subsection*{fs10.img}
+
+１つのinodeの参照しているブロックに
+bmapで未使用になっているブロック800
+を参照しているものがある。
+
+それ以外のエラーは、そのエラーにより
+inodeが除外されたこのによる副作用である。
+
+\subsection*{fs11.img}
+
+ルートディレクトリの".."が自分自身を指しておらず、
+18番目のinodeを指している。さらに、18番目のinodeの
+".."がルートディレクトリを指している。
+これは、ルートディレクトリの一貫性が保たれていないだけでなく、
+お互いがお互いの親という関係になっており、
+矛盾している。
+
+\subsection*{fs12.img}
+
+スーパーブロックのsizeの値が間違っている。
+
+inodeの参照しているブロックがデータブロックを指しているかを
+チェックするときに$size - nblocks$でデータブロックの始まり
+を計算しているので、間違ったsizeの値により、
+テストが誤って複数のinodeを破壊されていると判断してしまっている。
+ほかのエラーはそれによるものである。
+
+\end{document}

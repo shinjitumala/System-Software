@@ -1,0 +1,2987 @@
+****************************************************************
+sample\fs01.img:
+----------------------------------------------------------------
+Error <super block>: 'inodestart' is corrupted.
+super block test: failed
+	Found inconsistencies with block count and block start.
+----------------------------------------------------------------
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(65535)
+major: 65535
+minor: 65535
+nlink: 65535
+size: 4294967295
+addrs: [4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, ]
+Error <inode      >: Unknown 'type'.
+type: ERROR_UNKNOWN(127)
+major: 0
+minor: 0
+nlink: 0
+size: 0
+addrs: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ]
+Error <inode      >: Device number is set for non-device inode.
+Error <inode      >: addrs out of bounds direct reference. (774766593)
+Error <inode      >: addrs out of bounds direct reference. (1163001858)
+Error <inode      >: addrs out of bounds direct reference. (1162691649)
+Error <inode      >: addrs out of bounds direct reference. (1633878019)
+Error <inode      >: 'size' is invalid.
+type: T_DIR
+major: 46
+minor: 0
+nlink: 0
+size: 0
+addrs: [0, 774766593, 0, 0, 0, 1163001858, 1162691649, 0, 0, 1633878019, 116, 0, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1868955653)
+Error <inode      >: addrs out of bounds direct reference. (1702128498)
+Error <inode      >: addrs out of bounds direct reference. (29811)
+Error <inode      >: addrs out of bounds direct reference. (1919352838)
+Error <inode      >: addrs out of bounds direct reference. (28773)
+Error <inode      >: addrs out of bounds direct reference. (1852375047)
+Error <inode      >: addrs out of bounds direct reference. (29801)
+type: ERROR_UNKNOWN(4)
+major: 25445
+minor: 28520
+nlink: 0
+size: 0
+addrs: [0, 1868955653, 1702128498, 29811, 0, 1919352838, 28773, 0, 0, 1852375047, 29801, 0, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1852571657)
+Error <inode      >: addrs out of bounds direct reference. (1936457738)
+Error <inode      >: addrs out of bounds direct reference. (1802305547)
+Error <inode      >: addrs out of bounds direct reference. (7498084)
+type: ERROR_UNKNOWN(8)
+major: 26987
+minor: 27756
+nlink: 0
+size: 0
+addrs: [0, 1852571657, 0, 0, 0, 1936457738, 0, 0, 0, 1802305547, 7498084, 0, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1752367117)
+Error <inode      >: addrs out of bounds direct reference. (1953693710)
+Error <inode      >: addrs out of bounds direct reference. (1936942450)
+Error <inode      >: addrs out of bounds direct reference. (29542)
+Error <inode      >: addrs out of bounds direct reference. (1937047567)
+Error <inode      >: addrs out of bounds direct reference. (1702130277)
+Error <inode      >: addrs out of bounds direct reference. (7566451)
+type: ERROR_UNKNOWN(12)
+major: 28018
+minor: 0
+nlink: 0
+size: 0
+addrs: [0, 1752367117, 0, 0, 0, 1953693710, 1936942450, 29542, 0, 1937047567, 1702130277, 7566451, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1870266385)
+Error <inode      >: addrs out of bounds direct reference. (1701405293)
+type: ERROR_UNKNOWN(16)
+major: 25463
+minor: 0
+nlink: 0
+size: 0
+addrs: [0, 1870266385, 1701405293, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ]
+Error <inode      >: Incorrect 'nlink' at root
+Error <inode      >: Incorrect 'nlink'
+inode test: failed
+	Found 7 type errors.
+	Found 2 directory errors.
+	Found 37 address error.
+	Found 2 size errors.
+----------------------------------------------------------------
+Error <bmap       >: Incorrect 'used' status error. (59)
+Error <bmap       >: Incorrect 'used' status error. (60)
+Error <bmap       >: Incorrect 'used' status error. (61)
+Error <bmap       >: Incorrect 'used' status error. (62)
+Error <bmap       >: Incorrect 'used' status error. (63)
+Error <bmap       >: Incorrect 'used' status error. (64)
+Error <bmap       >: Incorrect 'used' status error. (65)
+Error <bmap       >: Incorrect 'used' status error. (66)
+Error <bmap       >: Incorrect 'used' status error. (67)
+Error <bmap       >: Incorrect 'used' status error. (68)
+Error <bmap       >: Incorrect 'used' status error. (69)
+Error <bmap       >: Incorrect 'used' status error. (70)
+Error <bmap       >: Incorrect 'used' status error. (71)
+Error <bmap       >: Incorrect 'used' status error. (72)
+Error <bmap       >: Incorrect 'used' status error. (73)
+Error <bmap       >: Incorrect 'used' status error. (74)
+Error <bmap       >: Incorrect 'used' status error. (75)
+Error <bmap       >: Incorrect 'used' status error. (76)
+Error <bmap       >: Incorrect 'used' status error. (77)
+Error <bmap       >: Incorrect 'used' status error. (78)
+Error <bmap       >: Incorrect 'used' status error. (79)
+Error <bmap       >: Incorrect 'used' status error. (80)
+Error <bmap       >: Incorrect 'used' status error. (81)
+Error <bmap       >: Incorrect 'used' status error. (82)
+Error <bmap       >: Incorrect 'used' status error. (83)
+Error <bmap       >: Incorrect 'used' status error. (84)
+Error <bmap       >: Incorrect 'used' status error. (85)
+Error <bmap       >: Incorrect 'used' status error. (86)
+Error <bmap       >: Incorrect 'used' status error. (87)
+Error <bmap       >: Incorrect 'used' status error. (88)
+Error <bmap       >: Incorrect 'used' status error. (89)
+Error <bmap       >: Incorrect 'used' status error. (90)
+Error <bmap       >: Incorrect 'used' status error. (91)
+Error <bmap       >: Incorrect 'used' status error. (92)
+Error <bmap       >: Incorrect 'used' status error. (93)
+Error <bmap       >: Incorrect 'used' status error. (94)
+Error <bmap       >: Incorrect 'used' status error. (95)
+Error <bmap       >: Incorrect 'used' status error. (96)
+Error <bmap       >: Incorrect 'used' status error. (97)
+Error <bmap       >: Incorrect 'used' status error. (98)
+Error <bmap       >: Incorrect 'used' status error. (99)
+Error <bmap       >: Incorrect 'used' status error. (100)
+Error <bmap       >: Incorrect 'used' status error. (101)
+Error <bmap       >: Incorrect 'used' status error. (102)
+Error <bmap       >: Incorrect 'used' status error. (103)
+Error <bmap       >: Incorrect 'used' status error. (104)
+Error <bmap       >: Incorrect 'used' status error. (105)
+Error <bmap       >: Incorrect 'used' status error. (106)
+Error <bmap       >: Incorrect 'used' status error. (107)
+Error <bmap       >: Incorrect 'used' status error. (108)
+Error <bmap       >: Incorrect 'used' status error. (109)
+Error <bmap       >: Incorrect 'used' status error. (110)
+Error <bmap       >: Incorrect 'used' status error. (111)
+Error <bmap       >: Incorrect 'used' status error. (112)
+Error <bmap       >: Incorrect 'used' status error. (113)
+Error <bmap       >: Incorrect 'used' status error. (114)
+Error <bmap       >: Incorrect 'used' status error. (115)
+Error <bmap       >: Incorrect 'used' status error. (116)
+Error <bmap       >: Incorrect 'used' status error. (117)
+Error <bmap       >: Incorrect 'used' status error. (118)
+Error <bmap       >: Incorrect 'used' status error. (119)
+Error <bmap       >: Incorrect 'used' status error. (120)
+Error <bmap       >: Incorrect 'used' status error. (121)
+Error <bmap       >: Incorrect 'used' status error. (122)
+Error <bmap       >: Incorrect 'used' status error. (123)
+Error <bmap       >: Incorrect 'used' status error. (124)
+Error <bmap       >: Incorrect 'used' status error. (125)
+Error <bmap       >: Incorrect 'used' status error. (126)
+Error <bmap       >: Incorrect 'used' status error. (127)
+Error <bmap       >: Incorrect 'used' status error. (128)
+Error <bmap       >: Incorrect 'used' status error. (129)
+Error <bmap       >: Incorrect 'used' status error. (130)
+Error <bmap       >: Incorrect 'used' status error. (131)
+Error <bmap       >: Incorrect 'used' status error. (132)
+Error <bmap       >: Incorrect 'used' status error. (133)
+Error <bmap       >: Incorrect 'used' status error. (134)
+Error <bmap       >: Incorrect 'used' status error. (135)
+Error <bmap       >: Incorrect 'used' status error. (136)
+Error <bmap       >: Incorrect 'used' status error. (137)
+Error <bmap       >: Incorrect 'used' status error. (138)
+Error <bmap       >: Incorrect 'used' status error. (139)
+Error <bmap       >: Incorrect 'used' status error. (140)
+Error <bmap       >: Incorrect 'used' status error. (141)
+Error <bmap       >: Incorrect 'used' status error. (142)
+Error <bmap       >: Incorrect 'used' status error. (143)
+Error <bmap       >: Incorrect 'used' status error. (144)
+Error <bmap       >: Incorrect 'used' status error. (145)
+Error <bmap       >: Incorrect 'used' status error. (146)
+Error <bmap       >: Incorrect 'used' status error. (147)
+Error <bmap       >: Incorrect 'used' status error. (148)
+Error <bmap       >: Incorrect 'used' status error. (149)
+Error <bmap       >: Incorrect 'used' status error. (150)
+Error <bmap       >: Incorrect 'used' status error. (151)
+Error <bmap       >: Incorrect 'used' status error. (152)
+Error <bmap       >: Incorrect 'used' status error. (153)
+Error <bmap       >: Incorrect 'used' status error. (154)
+Error <bmap       >: Incorrect 'used' status error. (155)
+Error <bmap       >: Incorrect 'used' status error. (156)
+Error <bmap       >: Incorrect 'used' status error. (157)
+Error <bmap       >: Incorrect 'used' status error. (158)
+Error <bmap       >: Incorrect 'used' status error. (159)
+Error <bmap       >: Incorrect 'used' status error. (160)
+Error <bmap       >: Incorrect 'used' status error. (161)
+Error <bmap       >: Incorrect 'used' status error. (162)
+Error <bmap       >: Incorrect 'used' status error. (163)
+Error <bmap       >: Incorrect 'used' status error. (164)
+Error <bmap       >: Incorrect 'used' status error. (165)
+Error <bmap       >: Incorrect 'used' status error. (166)
+Error <bmap       >: Incorrect 'used' status error. (167)
+Error <bmap       >: Incorrect 'used' status error. (168)
+Error <bmap       >: Incorrect 'used' status error. (169)
+Error <bmap       >: Incorrect 'used' status error. (170)
+Error <bmap       >: Incorrect 'used' status error. (171)
+Error <bmap       >: Incorrect 'used' status error. (172)
+Error <bmap       >: Incorrect 'used' status error. (173)
+Error <bmap       >: Incorrect 'used' status error. (174)
+Error <bmap       >: Incorrect 'used' status error. (175)
+Error <bmap       >: Incorrect 'used' status error. (176)
+Error <bmap       >: Incorrect 'used' status error. (177)
+Error <bmap       >: Incorrect 'used' status error. (178)
+Error <bmap       >: Incorrect 'used' status error. (179)
+Error <bmap       >: Incorrect 'used' status error. (180)
+Error <bmap       >: Incorrect 'used' status error. (181)
+Error <bmap       >: Incorrect 'used' status error. (182)
+Error <bmap       >: Incorrect 'used' status error. (183)
+Error <bmap       >: Incorrect 'used' status error. (184)
+Error <bmap       >: Incorrect 'used' status error. (185)
+Error <bmap       >: Incorrect 'used' status error. (186)
+Error <bmap       >: Incorrect 'used' status error. (187)
+Error <bmap       >: Incorrect 'used' status error. (188)
+Error <bmap       >: Incorrect 'used' status error. (189)
+Error <bmap       >: Incorrect 'used' status error. (190)
+Error <bmap       >: Incorrect 'used' status error. (191)
+Error <bmap       >: Incorrect 'used' status error. (192)
+Error <bmap       >: Incorrect 'used' status error. (193)
+Error <bmap       >: Incorrect 'used' status error. (194)
+Error <bmap       >: Incorrect 'used' status error. (195)
+Error <bmap       >: Incorrect 'used' status error. (196)
+Error <bmap       >: Incorrect 'used' status error. (197)
+Error <bmap       >: Incorrect 'used' status error. (198)
+Error <bmap       >: Incorrect 'used' status error. (199)
+Error <bmap       >: Incorrect 'used' status error. (200)
+Error <bmap       >: Incorrect 'used' status error. (201)
+Error <bmap       >: Incorrect 'used' status error. (202)
+Error <bmap       >: Incorrect 'used' status error. (203)
+Error <bmap       >: Incorrect 'used' status error. (204)
+Error <bmap       >: Incorrect 'used' status error. (205)
+Error <bmap       >: Incorrect 'used' status error. (206)
+Error <bmap       >: Incorrect 'used' status error. (207)
+Error <bmap       >: Incorrect 'used' status error. (208)
+Error <bmap       >: Incorrect 'used' status error. (209)
+Error <bmap       >: Incorrect 'used' status error. (210)
+Error <bmap       >: Incorrect 'used' status error. (211)
+Error <bmap       >: Incorrect 'used' status error. (212)
+Error <bmap       >: Incorrect 'used' status error. (213)
+Error <bmap       >: Incorrect 'used' status error. (214)
+Error <bmap       >: Incorrect 'used' status error. (215)
+Error <bmap       >: Incorrect 'used' status error. (216)
+Error <bmap       >: Incorrect 'used' status error. (217)
+Error <bmap       >: Incorrect 'used' status error. (218)
+Error <bmap       >: Incorrect 'used' status error. (219)
+Error <bmap       >: Incorrect 'used' status error. (220)
+Error <bmap       >: Incorrect 'used' status error. (221)
+Error <bmap       >: Incorrect 'used' status error. (222)
+Error <bmap       >: Incorrect 'used' status error. (223)
+Error <bmap       >: Incorrect 'used' status error. (224)
+Error <bmap       >: Incorrect 'used' status error. (225)
+Error <bmap       >: Incorrect 'used' status error. (226)
+Error <bmap       >: Incorrect 'used' status error. (227)
+Error <bmap       >: Incorrect 'used' status error. (228)
+Error <bmap       >: Incorrect 'used' status error. (229)
+Error <bmap       >: Incorrect 'used' status error. (230)
+Error <bmap       >: Incorrect 'used' status error. (231)
+Error <bmap       >: Incorrect 'used' status error. (232)
+Error <bmap       >: Incorrect 'used' status error. (233)
+Error <bmap       >: Incorrect 'used' status error. (234)
+Error <bmap       >: Incorrect 'used' status error. (235)
+Error <bmap       >: Incorrect 'used' status error. (236)
+Error <bmap       >: Incorrect 'used' status error. (237)
+Error <bmap       >: Incorrect 'used' status error. (238)
+Error <bmap       >: Incorrect 'used' status error. (239)
+Error <bmap       >: Incorrect 'used' status error. (240)
+Error <bmap       >: Incorrect 'used' status error. (241)
+Error <bmap       >: Incorrect 'used' status error. (242)
+Error <bmap       >: Incorrect 'used' status error. (243)
+Error <bmap       >: Incorrect 'used' status error. (244)
+Error <bmap       >: Incorrect 'used' status error. (245)
+Error <bmap       >: Incorrect 'used' status error. (246)
+Error <bmap       >: Incorrect 'used' status error. (247)
+Error <bmap       >: Incorrect 'used' status error. (248)
+Error <bmap       >: Incorrect 'used' status error. (249)
+Error <bmap       >: Incorrect 'used' status error. (250)
+Error <bmap       >: Incorrect 'used' status error. (251)
+Error <bmap       >: Incorrect 'used' status error. (252)
+Error <bmap       >: Incorrect 'used' status error. (253)
+Error <bmap       >: Incorrect 'used' status error. (254)
+Error <bmap       >: Incorrect 'used' status error. (255)
+Error <bmap       >: Incorrect 'used' status error. (256)
+Error <bmap       >: Incorrect 'used' status error. (257)
+Error <bmap       >: Incorrect 'used' status error. (258)
+Error <bmap       >: Incorrect 'used' status error. (259)
+Error <bmap       >: Incorrect 'used' status error. (260)
+Error <bmap       >: Incorrect 'used' status error. (261)
+Error <bmap       >: Incorrect 'used' status error. (262)
+Error <bmap       >: Incorrect 'used' status error. (263)
+Error <bmap       >: Incorrect 'used' status error. (264)
+Error <bmap       >: Incorrect 'used' status error. (265)
+Error <bmap       >: Incorrect 'used' status error. (266)
+Error <bmap       >: Incorrect 'used' status error. (267)
+Error <bmap       >: Incorrect 'used' status error. (268)
+Error <bmap       >: Incorrect 'used' status error. (269)
+Error <bmap       >: Incorrect 'used' status error. (270)
+Error <bmap       >: Incorrect 'used' status error. (271)
+Error <bmap       >: Incorrect 'used' status error. (272)
+Error <bmap       >: Incorrect 'used' status error. (273)
+Error <bmap       >: Incorrect 'used' status error. (274)
+Error <bmap       >: Incorrect 'used' status error. (275)
+Error <bmap       >: Incorrect 'used' status error. (276)
+Error <bmap       >: Incorrect 'used' status error. (277)
+Error <bmap       >: Incorrect 'used' status error. (278)
+Error <bmap       >: Incorrect 'used' status error. (279)
+Error <bmap       >: Incorrect 'used' status error. (280)
+Error <bmap       >: Incorrect 'used' status error. (281)
+Error <bmap       >: Incorrect 'used' status error. (282)
+Error <bmap       >: Incorrect 'used' status error. (283)
+Error <bmap       >: Incorrect 'used' status error. (284)
+Error <bmap       >: Incorrect 'used' status error. (285)
+Error <bmap       >: Incorrect 'used' status error. (286)
+Error <bmap       >: Incorrect 'used' status error. (287)
+Error <bmap       >: Incorrect 'used' status error. (288)
+Error <bmap       >: Incorrect 'used' status error. (289)
+Error <bmap       >: Incorrect 'used' status error. (290)
+Error <bmap       >: Incorrect 'used' status error. (291)
+Error <bmap       >: Incorrect 'used' status error. (292)
+Error <bmap       >: Incorrect 'used' status error. (293)
+Error <bmap       >: Incorrect 'used' status error. (294)
+Error <bmap       >: Incorrect 'used' status error. (295)
+Error <bmap       >: Incorrect 'used' status error. (296)
+Error <bmap       >: Incorrect 'used' status error. (297)
+Error <bmap       >: Incorrect 'used' status error. (298)
+Error <bmap       >: Incorrect 'used' status error. (299)
+Error <bmap       >: Incorrect 'used' status error. (300)
+Error <bmap       >: Incorrect 'used' status error. (301)
+Error <bmap       >: Incorrect 'used' status error. (302)
+Error <bmap       >: Incorrect 'used' status error. (303)
+Error <bmap       >: Incorrect 'used' status error. (304)
+Error <bmap       >: Incorrect 'used' status error. (305)
+Error <bmap       >: Incorrect 'used' status error. (306)
+Error <bmap       >: Incorrect 'used' status error. (307)
+Error <bmap       >: Incorrect 'used' status error. (308)
+Error <bmap       >: Incorrect 'used' status error. (309)
+Error <bmap       >: Incorrect 'used' status error. (310)
+Error <bmap       >: Incorrect 'used' status error. (311)
+Error <bmap       >: Incorrect 'used' status error. (312)
+Error <bmap       >: Incorrect 'used' status error. (313)
+Error <bmap       >: Incorrect 'used' status error. (314)
+Error <bmap       >: Incorrect 'used' status error. (315)
+Error <bmap       >: Incorrect 'used' status error. (316)
+Error <bmap       >: Incorrect 'used' status error. (317)
+Error <bmap       >: Incorrect 'used' status error. (318)
+Error <bmap       >: Incorrect 'used' status error. (319)
+Error <bmap       >: Incorrect 'used' status error. (320)
+Error <bmap       >: Incorrect 'used' status error. (321)
+Error <bmap       >: Incorrect 'used' status error. (322)
+Error <bmap       >: Incorrect 'used' status error. (323)
+Error <bmap       >: Incorrect 'used' status error. (324)
+Error <bmap       >: Incorrect 'used' status error. (325)
+Error <bmap       >: Incorrect 'used' status error. (326)
+Error <bmap       >: Incorrect 'used' status error. (327)
+Error <bmap       >: Incorrect 'used' status error. (328)
+Error <bmap       >: Incorrect 'used' status error. (329)
+Error <bmap       >: Incorrect 'used' status error. (330)
+Error <bmap       >: Incorrect 'used' status error. (331)
+Error <bmap       >: Incorrect 'used' status error. (332)
+Error <bmap       >: Incorrect 'used' status error. (333)
+Error <bmap       >: Incorrect 'used' status error. (334)
+Error <bmap       >: Incorrect 'used' status error. (335)
+Error <bmap       >: Incorrect 'used' status error. (336)
+Error <bmap       >: Incorrect 'used' status error. (337)
+Error <bmap       >: Incorrect 'used' status error. (338)
+Error <bmap       >: Incorrect 'used' status error. (339)
+Error <bmap       >: Incorrect 'used' status error. (340)
+Error <bmap       >: Incorrect 'used' status error. (341)
+Error <bmap       >: Incorrect 'used' status error. (342)
+Error <bmap       >: Incorrect 'used' status error. (343)
+Error <bmap       >: Incorrect 'used' status error. (344)
+Error <bmap       >: Incorrect 'used' status error. (345)
+Error <bmap       >: Incorrect 'used' status error. (346)
+Error <bmap       >: Incorrect 'used' status error. (347)
+Error <bmap       >: Incorrect 'used' status error. (348)
+Error <bmap       >: Incorrect 'used' status error. (349)
+Error <bmap       >: Incorrect 'used' status error. (350)
+Error <bmap       >: Incorrect 'used' status error. (351)
+Error <bmap       >: Incorrect 'used' status error. (352)
+Error <bmap       >: Incorrect 'used' status error. (353)
+Error <bmap       >: Incorrect 'used' status error. (354)
+Error <bmap       >: Incorrect 'used' status error. (355)
+Error <bmap       >: Incorrect 'used' status error. (356)
+Error <bmap       >: Incorrect 'used' status error. (357)
+Error <bmap       >: Incorrect 'used' status error. (358)
+Error <bmap       >: Incorrect 'used' status error. (359)
+Error <bmap       >: Incorrect 'used' status error. (360)
+Error <bmap       >: Incorrect 'used' status error. (361)
+Error <bmap       >: Incorrect 'used' status error. (362)
+Error <bmap       >: Incorrect 'used' status error. (363)
+Error <bmap       >: Incorrect 'used' status error. (364)
+Error <bmap       >: Incorrect 'used' status error. (365)
+Error <bmap       >: Incorrect 'used' status error. (366)
+Error <bmap       >: Incorrect 'used' status error. (367)
+Error <bmap       >: Incorrect 'used' status error. (368)
+Error <bmap       >: Incorrect 'used' status error. (369)
+Error <bmap       >: Incorrect 'used' status error. (370)
+Error <bmap       >: Incorrect 'used' status error. (371)
+Error <bmap       >: Incorrect 'used' status error. (372)
+Error <bmap       >: Incorrect 'used' status error. (373)
+Error <bmap       >: Incorrect 'used' status error. (374)
+Error <bmap       >: Incorrect 'used' status error. (375)
+Error <bmap       >: Incorrect 'used' status error. (376)
+Error <bmap       >: Incorrect 'used' status error. (377)
+Error <bmap       >: Incorrect 'used' status error. (378)
+Error <bmap       >: Incorrect 'used' status error. (379)
+Error <bmap       >: Incorrect 'used' status error. (380)
+Error <bmap       >: Incorrect 'used' status error. (381)
+Error <bmap       >: Incorrect 'used' status error. (382)
+Error <bmap       >: Incorrect 'used' status error. (383)
+Error <bmap       >: Incorrect 'used' status error. (384)
+Error <bmap       >: Incorrect 'used' status error. (385)
+Error <bmap       >: Incorrect 'used' status error. (386)
+Error <bmap       >: Incorrect 'used' status error. (387)
+Error <bmap       >: Incorrect 'used' status error. (388)
+Error <bmap       >: Incorrect 'used' status error. (389)
+Error <bmap       >: Incorrect 'used' status error. (390)
+Error <bmap       >: Incorrect 'used' status error. (391)
+Error <bmap       >: Incorrect 'used' status error. (392)
+Error <bmap       >: Incorrect 'used' status error. (393)
+Error <bmap       >: Incorrect 'used' status error. (394)
+Error <bmap       >: Incorrect 'used' status error. (395)
+Error <bmap       >: Incorrect 'used' status error. (396)
+Error <bmap       >: Incorrect 'used' status error. (397)
+Error <bmap       >: Incorrect 'used' status error. (398)
+Error <bmap       >: Incorrect 'used' status error. (399)
+Error <bmap       >: Incorrect 'used' status error. (400)
+Error <bmap       >: Incorrect 'used' status error. (401)
+Error <bmap       >: Incorrect 'used' status error. (402)
+Error <bmap       >: Incorrect 'used' status error. (403)
+Error <bmap       >: Incorrect 'used' status error. (404)
+Error <bmap       >: Incorrect 'used' status error. (405)
+Error <bmap       >: Incorrect 'used' status error. (406)
+Error <bmap       >: Incorrect 'used' status error. (407)
+Error <bmap       >: Incorrect 'used' status error. (408)
+Error <bmap       >: Incorrect 'used' status error. (409)
+Error <bmap       >: Incorrect 'used' status error. (410)
+Error <bmap       >: Incorrect 'used' status error. (411)
+Error <bmap       >: Incorrect 'used' status error. (412)
+Error <bmap       >: Incorrect 'used' status error. (413)
+Error <bmap       >: Incorrect 'used' status error. (414)
+Error <bmap       >: Incorrect 'used' status error. (415)
+Error <bmap       >: Incorrect 'used' status error. (416)
+Error <bmap       >: Incorrect 'used' status error. (417)
+Error <bmap       >: Incorrect 'used' status error. (418)
+Error <bmap       >: Incorrect 'used' status error. (419)
+Error <bmap       >: Incorrect 'used' status error. (420)
+Error <bmap       >: Incorrect 'used' status error. (421)
+Error <bmap       >: Incorrect 'used' status error. (422)
+Error <bmap       >: Incorrect 'used' status error. (423)
+Error <bmap       >: Incorrect 'used' status error. (424)
+Error <bmap       >: Incorrect 'used' status error. (425)
+Error <bmap       >: Incorrect 'used' status error. (426)
+Error <bmap       >: Incorrect 'used' status error. (427)
+Error <bmap       >: Incorrect 'used' status error. (428)
+Error <bmap       >: Incorrect 'used' status error. (429)
+Error <bmap       >: Incorrect 'used' status error. (430)
+Error <bmap       >: Incorrect 'used' status error. (431)
+Error <bmap       >: Incorrect 'used' status error. (432)
+Error <bmap       >: Incorrect 'used' status error. (433)
+Error <bmap       >: Incorrect 'used' status error. (434)
+Error <bmap       >: Incorrect 'used' status error. (435)
+Error <bmap       >: Incorrect 'used' status error. (436)
+Error <bmap       >: Incorrect 'used' status error. (437)
+Error <bmap       >: Incorrect 'used' status error. (438)
+Error <bmap       >: Incorrect 'used' status error. (439)
+Error <bmap       >: Incorrect 'used' status error. (440)
+Error <bmap       >: Incorrect 'used' status error. (441)
+Error <bmap       >: Incorrect 'used' status error. (442)
+Error <bmap       >: Incorrect 'used' status error. (443)
+Error <bmap       >: Incorrect 'used' status error. (444)
+Error <bmap       >: Incorrect 'used' status error. (445)
+Error <bmap       >: Incorrect 'used' status error. (446)
+Error <bmap       >: Incorrect 'used' status error. (447)
+Error <bmap       >: Incorrect 'used' status error. (448)
+Error <bmap       >: Incorrect 'used' status error. (449)
+Error <bmap       >: Incorrect 'used' status error. (450)
+Error <bmap       >: Incorrect 'used' status error. (451)
+Error <bmap       >: Incorrect 'used' status error. (452)
+Error <bmap       >: Incorrect 'used' status error. (453)
+Error <bmap       >: Incorrect 'used' status error. (454)
+Error <bmap       >: Incorrect 'used' status error. (455)
+Error <bmap       >: Incorrect 'used' status error. (456)
+Error <bmap       >: Incorrect 'used' status error. (457)
+Error <bmap       >: Incorrect 'used' status error. (458)
+Error <bmap       >: Incorrect 'used' status error. (459)
+Error <bmap       >: Incorrect 'used' status error. (460)
+Error <bmap       >: Incorrect 'used' status error. (461)
+Error <bmap       >: Incorrect 'used' status error. (462)
+Error <bmap       >: Incorrect 'used' status error. (463)
+Error <bmap       >: Incorrect 'used' status error. (464)
+Error <bmap       >: Incorrect 'used' status error. (465)
+Error <bmap       >: Incorrect 'used' status error. (466)
+Error <bmap       >: Incorrect 'used' status error. (467)
+Error <bmap       >: Incorrect 'used' status error. (468)
+Error <bmap       >: Incorrect 'used' status error. (469)
+Error <bmap       >: Incorrect 'used' status error. (470)
+Error <bmap       >: Incorrect 'used' status error. (471)
+Error <bmap       >: Incorrect 'used' status error. (472)
+Error <bmap       >: Incorrect 'used' status error. (473)
+Error <bmap       >: Incorrect 'used' status error. (474)
+Error <bmap       >: Incorrect 'used' status error. (475)
+Error <bmap       >: Incorrect 'used' status error. (476)
+Error <bmap       >: Incorrect 'used' status error. (477)
+Error <bmap       >: Incorrect 'used' status error. (478)
+Error <bmap       >: Incorrect 'used' status error. (479)
+Error <bmap       >: Incorrect 'used' status error. (480)
+Error <bmap       >: Incorrect 'used' status error. (481)
+Error <bmap       >: Incorrect 'used' status error. (482)
+Error <bmap       >: Incorrect 'used' status error. (483)
+Error <bmap       >: Incorrect 'used' status error. (484)
+Error <bmap       >: Incorrect 'used' status error. (485)
+Error <bmap       >: Incorrect 'used' status error. (486)
+Error <bmap       >: Incorrect 'used' status error. (487)
+Error <bmap       >: Incorrect 'used' status error. (488)
+Error <bmap       >: Incorrect 'used' status error. (489)
+Error <bmap       >: Incorrect 'used' status error. (490)
+Error <bmap       >: Incorrect 'used' status error. (491)
+Error <bmap       >: Incorrect 'used' status error. (492)
+Error <bmap       >: Incorrect 'used' status error. (493)
+Error <bmap       >: Incorrect 'used' status error. (494)
+Error <bmap       >: Incorrect 'used' status error. (495)
+Error <bmap       >: Incorrect 'used' status error. (496)
+Error <bmap       >: Incorrect 'used' status error. (497)
+Error <bmap       >: Incorrect 'used' status error. (498)
+Error <bmap       >: Incorrect 'used' status error. (499)
+Error <bmap       >: Incorrect 'used' status error. (500)
+Error <bmap       >: Incorrect 'used' status error. (501)
+Error <bmap       >: Incorrect 'used' status error. (502)
+Error <bmap       >: Incorrect 'used' status error. (503)
+Error <bmap       >: Incorrect 'used' status error. (504)
+Error <bmap       >: Incorrect 'used' status error. (505)
+Error <bmap       >: Incorrect 'used' status error. (506)
+Error <bmap       >: Incorrect 'used' status error. (507)
+Error <bmap       >: Incorrect 'used' status error. (508)
+Error <bmap       >: Incorrect 'used' status error. (509)
+Error <bmap       >: Incorrect 'used' status error. (510)
+Error <bmap       >: Incorrect 'used' status error. (511)
+Error <bmap       >: Incorrect 'used' status error. (512)
+Error <bmap       >: Incorrect 'used' status error. (513)
+Error <bmap       >: Incorrect 'used' status error. (514)
+Error <bmap       >: Incorrect 'used' status error. (515)
+Error <bmap       >: Incorrect 'used' status error. (516)
+Error <bmap       >: Incorrect 'used' status error. (517)
+Error <bmap       >: Incorrect 'used' status error. (518)
+bmap test: failed
+	Found 460 incorrect 'used' flag errors.
+----------------------------------------------------------------
+directory test: passed
+****************************************************************
+
+****************************************************************
+sample\fs02.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: passed
+----------------------------------------------------------------
+Error <bmap       >: Incorrect 'used' status error. (600)
+bmap test: failed
+	Found 1 incorrect 'used' flag errors.
+----------------------------------------------------------------
+directory test: passed
+****************************************************************
+
+****************************************************************
+sample\fs03.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: passed
+----------------------------------------------------------------
+bmap test: passed
+----------------------------------------------------------------
+directory test: passed
+****************************************************************
+
+****************************************************************
+sample\fs04.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+Error <inode      >: addrs referenced unused block. (300)
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11335
+addrs: [280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, ]
+inode test: failed
+	Found 1 address error.
+	Found 1 size errors.
+----------------------------------------------------------------
+Error <bmap       >: Incorrect 'used' status error. (280)
+Error <bmap       >: Incorrect 'used' status error. (281)
+Error <bmap       >: Incorrect 'used' status error. (282)
+Error <bmap       >: Incorrect 'used' status error. (283)
+Error <bmap       >: Incorrect 'used' status error. (284)
+Error <bmap       >: Incorrect 'used' status error. (285)
+Error <bmap       >: Incorrect 'used' status error. (286)
+Error <bmap       >: Incorrect 'used' status error. (287)
+Error <bmap       >: Incorrect 'used' status error. (288)
+Error <bmap       >: Incorrect 'used' status error. (289)
+Error <bmap       >: Incorrect 'used' status error. (290)
+Error <bmap       >: Incorrect 'used' status error. (291)
+Error <bmap       >: Incorrect 'used' status error. (292)
+Error <bmap       >: Incorrect 'used' status error. (293)
+Error <bmap       >: Incorrect 'used' status error. (294)
+Error <bmap       >: Incorrect 'used' status error. (295)
+Error <bmap       >: Incorrect 'used' status error. (296)
+Error <bmap       >: Incorrect 'used' status error. (297)
+Error <bmap       >: Incorrect 'used' status error. (298)
+Error <bmap       >: Incorrect 'used' status error. (299)
+Error <bmap       >: Incorrect 'used' status error. (301)
+Error <bmap       >: Incorrect 'used' status error. (302)
+Error <bmap       >: Incorrect 'used' status error. (303)
+bmap test: failed
+	Found 23 incorrect 'used' flag errors.
+----------------------------------------------------------------
+Error <directory  >: Directory referenced unused or invalid inode.
+directory test: failed
+	Found 1 inode reference errors.
+****************************************************************
+
+****************************************************************
+sample\fs05.img:
+----------------------------------------------------------------
+Error <super block>: 'size' does not match actual file size.
+Error <super block>: 'size' contradicts the total block count calculated from other data.
+super block test: failed
+	Found size error.
+----------------------------------------------------------------
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 12184
+addrs: [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11341
+addrs: [90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 7155
+addrs: [114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 13700
+addrs: [129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11758
+addrs: [157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11293
+addrs: [181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11271
+addrs: [205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 13230
+addrs: [229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11350
+addrs: [256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11335
+addrs: [280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 21198
+addrs: [304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11801
+addrs: [347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 49157
+addrs: [372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, ]
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 12698
+addrs: [470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, ]
+Error <inode      >: addrs out of bounds indirect reference. (508)
+Error <inode      >: addrs out of bounds indirect reference. (508)
+Error <inode      >: addrs out of bounds indirect reference. (508)
+Error <inode      >: addrs out of bounds indirect reference. (508)
+Error <inode      >: addrs out of bounds indirect reference. (508)
+Error <inode      >: addrs out of bounds indirect reference. (508)
+Error <inode      >: addrs out of bounds indirect reference. (508)
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11083
+addrs: [496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, ]
+inode test: failed
+	Found 7 address error.
+	Found 15 size errors.
+----------------------------------------------------------------
+Error <bmap       >: Cannot continue with bmap test due to critical error in super block data.
+bmap test: failed
+	Test failed due to critical data corruption in super block.
+----------------------------------------------------------------
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+Error <directory  >: Directory referenced unused or invalid inode.
+directory test: failed
+	Found 15 inode reference errors.
+****************************************************************
+
+****************************************************************
+sample\fs06.img:
+----------------------------------------------------------------
+Error <super block>: 'bmapstart' is corrupted.
+Error <super block>: 'size' contradicts the total block count calculated from other data.
+super block test: failed
+	Found size error.
+	Found inconsistencies with block count and block start.
+----------------------------------------------------------------
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: addrs out of bounds direct reference. (4294967295)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(65535)
+major: 65535
+minor: 65535
+nlink: 65535
+size: 4294967295
+addrs: [4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, ]
+Error <inode      >: Unknown 'type'.
+type: ERROR_UNKNOWN(127)
+major: 0
+minor: 0
+nlink: 0
+size: 0
+addrs: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ]
+Error <inode      >: Device number is set for non-device inode.
+Error <inode      >: addrs out of bounds direct reference. (774766593)
+Error <inode      >: addrs out of bounds direct reference. (1163001858)
+Error <inode      >: addrs out of bounds direct reference. (1162691649)
+Error <inode      >: addrs out of bounds direct reference. (1633878019)
+Error <inode      >: 'size' is invalid.
+type: T_DIR
+major: 46
+minor: 0
+nlink: 0
+size: 0
+addrs: [0, 774766593, 0, 0, 0, 1163001858, 1162691649, 0, 0, 1633878019, 116, 0, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1868955653)
+Error <inode      >: addrs out of bounds direct reference. (1702128498)
+Error <inode      >: addrs out of bounds direct reference. (29811)
+Error <inode      >: addrs out of bounds direct reference. (1919352838)
+Error <inode      >: addrs out of bounds direct reference. (28773)
+Error <inode      >: addrs out of bounds direct reference. (1852375047)
+Error <inode      >: addrs out of bounds direct reference. (29801)
+type: ERROR_UNKNOWN(4)
+major: 25445
+minor: 28520
+nlink: 0
+size: 0
+addrs: [0, 1868955653, 1702128498, 29811, 0, 1919352838, 28773, 0, 0, 1852375047, 29801, 0, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1852571657)
+Error <inode      >: addrs out of bounds direct reference. (1936457738)
+Error <inode      >: addrs out of bounds direct reference. (1802305547)
+Error <inode      >: addrs out of bounds direct reference. (7498084)
+type: ERROR_UNKNOWN(8)
+major: 26987
+minor: 27756
+nlink: 0
+size: 0
+addrs: [0, 1852571657, 0, 0, 0, 1936457738, 0, 0, 0, 1802305547, 7498084, 0, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1752367117)
+Error <inode      >: addrs out of bounds direct reference. (1953693710)
+Error <inode      >: addrs out of bounds direct reference. (1936942450)
+Error <inode      >: addrs out of bounds direct reference. (29542)
+Error <inode      >: addrs out of bounds direct reference. (1937047567)
+Error <inode      >: addrs out of bounds direct reference. (1702130277)
+Error <inode      >: addrs out of bounds direct reference. (7566451)
+type: ERROR_UNKNOWN(12)
+major: 28018
+minor: 0
+nlink: 0
+size: 0
+addrs: [0, 1752367117, 0, 0, 0, 1953693710, 1936942450, 29542, 0, 1937047567, 1702130277, 7566451, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1870266385)
+Error <inode      >: addrs out of bounds direct reference. (1701405293)
+type: ERROR_UNKNOWN(16)
+major: 25463
+minor: 0
+nlink: 0
+size: 0
+addrs: [0, 1870266385, 1701405293, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1819307369)
+Error <inode      >: addrs out of bounds direct reference. (1852140901)
+Error <inode      >: addrs out of bounds direct reference. (1769234804)
+Error <inode      >: addrs out of bounds direct reference. (1864396399)
+Error <inode      >: addrs out of bounds direct reference. (1698963558)
+Error <inode      >: addrs out of bounds direct reference. (1936289390)
+Error <inode      >: addrs out of bounds direct reference. (1953059360)
+Error <inode      >: addrs out of bounds direct reference. (1701406819)
+Error <inode      >: addrs out of bounds direct reference. (1629516583)
+Error <inode      >: addrs out of bounds direct reference. (1260414062)
+Error <inode      >: addrs out of bounds direct reference. (1411411557)
+Error <inode      >: addrs out of bounds direct reference. (1886220136)
+Error <inode      >: addrs out of bounds direct reference. (661548915)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(30328)
+major: 8246
+minor: 29545
+nlink: 24864
+size: 761623072
+addrs: [1819307369, 1852140901, 1769234804, 1864396399, 1698963558, 1936289390, 1953059360, 1701406819, 1629516583, 1260414062, 1411411557, 1886220136, 661548915, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (908095087)
+Error <inode      >: addrs out of bounds direct reference. (913713184)
+Error <inode      >: addrs out of bounds direct reference. (538979881)
+Error <inode      >: addrs out of bounds direct reference. (540440184)
+Error <inode      >: addrs out of bounds direct reference. (1936682860)
+Error <inode      >: addrs out of bounds direct reference. (544828517)
+Error <inode      >: addrs out of bounds direct reference. (1819045734)
+Error <inode      >: addrs out of bounds direct reference. (544438127)
+Error <inode      >: addrs out of bounds direct reference. (543516788)
+Error <inode      >: addrs out of bounds direct reference. (1970435187)
+Error <inode      >: addrs out of bounds direct reference. (1920300131)
+Error <inode      >: addrs out of bounds direct reference. (1851859045)
+Error <inode      >: addrs out of bounds direct reference. (1953701988)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(8307)
+major: 28245
+minor: 30825
+nlink: 22026
+size: 1769173605
+addrs: [908095087, 913713184, 538979881, 540440184, 1936682860, 544828517, 1819045734, 544438127, 543516788, 1970435187, 1920300131, 1851859045, 1953701988, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1763734645)
+Error <inode      >: addrs out of bounds direct reference. (1835606131)
+Error <inode      >: addrs out of bounds direct reference. (1835363440)
+Error <inode      >: addrs out of bounds direct reference. (1702129253)
+Error <inode      >: addrs out of bounds direct reference. (1868963940)
+Error <inode      >: addrs out of bounds direct reference. (543236210)
+Error <inode      >: addrs out of bounds direct reference. (1701080941)
+Error <inode      >: addrs out of bounds direct reference. (2015391346)
+Error <inode      >: addrs out of bounds direct reference. (1647130168)
+Error <inode      >: addrs out of bounds direct reference. (1684370273)
+Error <inode      >: addrs out of bounds direct reference. (1819634976)
+Error <inode      >: addrs out of bounds direct reference. (1919969652)
+Error <inode      >: addrs out of bounds direct reference. (1936024431)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(27769)
+major: 8293
+minor: 26223
+nlink: 30240
+size: 1644833846
+addrs: [1763734645, 1835606131, 1835363440, 1702129253, 1868963940, 543236210, 1701080941, 2015391346, 1647130168, 1684370273, 1819634976, 1919969652, 1936024431, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1126189395)
+Error <inode      >: addrs out of bounds direct reference. (1091177006)
+Error <inode      >: addrs out of bounds direct reference. (1330531139)
+Error <inode      >: addrs out of bounds direct reference. (1145392215)
+Error <inode      >: addrs out of bounds direct reference. (1313164615)
+Error <inode      >: addrs out of bounds direct reference. (168448852)
+Error <inode      >: addrs out of bounds direct reference. (540440184)
+Error <inode      >: addrs out of bounds direct reference. (1763734377)
+Error <inode      >: addrs out of bounds direct reference. (1768977262)
+Error <inode      >: addrs out of bounds direct reference. (543450482)
+Error <inode      >: addrs out of bounds direct reference. (1243642210)
+Error <inode      >: addrs out of bounds direct reference. (544106607)
+Error <inode      >: addrs out of bounds direct reference. (1852795212)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(28531)
+major: 8306
+minor: 29557
+nlink: 28265
+size: 1312890983
+addrs: [1126189395, 1091177006, 1330531139, 1145392215, 1313164615, 168448852, 540440184, 1763734377, 1768977262, 543450482, 1243642210, 544106607, 1852795212, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1864399218)
+Error <inode      >: addrs out of bounds direct reference. (1314201710)
+Error <inode      >: addrs out of bounds direct reference. (908089417)
+Error <inode      >: addrs out of bounds direct reference. (1159751796)
+Error <inode      >: addrs out of bounds direct reference. (1769236836)
+Error <inode      >: addrs out of bounds direct reference. (673214063)
+Error <inode      >: addrs out of bounds direct reference. (1919247696)
+Error <inode      >: addrs out of bounds direct reference. (544175114)
+Error <inode      >: addrs out of bounds direct reference. (1919247696)
+Error <inode      >: addrs out of bounds direct reference. (1836008224)
+Error <inode      >: addrs out of bounds direct reference. (1768846701)
+Error <inode      >: addrs out of bounds direct reference. (1769234787)
+Error <inode      >: addrs out of bounds direct reference. (997420655)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(10099)
+major: 8307
+minor: 28483
+nlink: 28013
+size: 1635020389
+addrs: [1864399218, 1314201710, 908089417, 1159751796, 1769236836, 673214063, 1919247696, 544175114, 1919247696, 1836008224, 1768846701, 1769234787, 997420655, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (808269881)
+Error <inode      >: addrs out of bounds direct reference. (925709105)
+Error <inode      >: addrs out of bounds direct reference. (1932599355)
+Error <inode      >: addrs out of bounds direct reference. (1684349044)
+Error <inode      >: addrs out of bounds direct reference. (1869182057)
+Error <inode      >: addrs out of bounds direct reference. (1244143726)
+Error <inode      >: addrs out of bounds direct reference. (543518325)
+Error <inode      >: addrs out of bounds direct reference. (170669105)
+Error <inode      >: addrs out of bounds direct reference. (808464434)
+Error <inode      >: addrs out of bounds direct reference. (539896105)
+Error <inode      >: addrs out of bounds direct reference. (543515987)
+Error <inode      >: addrs out of bounds direct reference. (1869835361)
+Error <inode      >: addrs out of bounds direct reference. (1953785888)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(18720)
+major: 16979
+minor: 14926
+nlink: 12576
+size: 859256109
+addrs: [808269881, 925709105, 1932599355, 1684349044, 1869182057, 1244143726, 543518325, 170669105, 808464434, 539896105, 543515987, 1869835361, 1953785888, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (778856801)
+Error <inode      >: addrs out of bounds direct reference. (779381101)
+Error <inode      >: addrs out of bounds direct reference. (796222565)
+Error <inode      >: addrs out of bounds direct reference. (842542646)
+Error <inode      >: addrs out of bounds direct reference. (539766584)
+Error <inode      >: addrs out of bounds direct reference. (1667852407)
+Error <inode      >: addrs out of bounds direct reference. (1919945320)
+Error <inode      >: addrs out of bounds direct reference. (1684633199)
+Error <inode      >: addrs out of bounds direct reference. (1881174885)
+Error <inode      >: addrs out of bounds direct reference. (1953393007)
+Error <inode      >: addrs out of bounds direct reference. (544436837)
+Error <inode      >: addrs out of bounds direct reference. (1864396660)
+Error <inode      >: addrs out of bounds direct reference. (1768697198)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(29552)
+major: 12090
+minor: 28719
+nlink: 28516
+size: 1935879795
+addrs: [778856801, 779381101, 796222565, 842542646, 539766584, 1667852407, 1919945320, 1684633199, 1881174885, 1953393007, 544436837, 1864396660, 1768697198, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1919903264)
+Error <inode      >: addrs out of bounds direct reference. (775321120)
+Error <inode      >: addrs out of bounds direct reference. (1987578378)
+Error <inode      >: addrs out of bounds direct reference. (1868701750)
+Error <inode      >: addrs out of bounds direct reference. (2003792498)
+Error <inode      >: addrs out of bounds direct reference. (1868767347)
+Error <inode      >: addrs out of bounds direct reference. (1713399140)
+Error <inode      >: addrs out of bounds direct reference. (544042866)
+Error <inode      >: addrs out of bounds direct reference. (543516788)
+Error <inode      >: addrs out of bounds direct reference. (1819045734)
+Error <inode      >: addrs out of bounds direct reference. (1852405615)
+Error <inode      >: addrs out of bounds direct reference. (1869815911)
+Error <inode      >: addrs out of bounds direct reference. (1701016181)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(25966)
+major: 29216
+minor: 29541
+nlink: 30063
+size: 1936024434
+addrs: [1919903264, 775321120, 1987578378, 1868701750, 2003792498, 1868767347, 1713399140, 544042866, 543516788, 1819045734, 1852405615, 1869815911, 1701016181, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (778924897)
+Error <inode      >: addrs out of bounds direct reference. (1696607336)
+Error <inode      >: addrs out of bounds direct reference. (1747871340)
+Error <inode      >: addrs out of bounds direct reference. (1835868204)
+Error <inode      >: addrs out of bounds direct reference. (745025141)
+Error <inode      >: addrs out of bounds direct reference. (1869570592)
+Error <inode      >: addrs out of bounds direct reference. (1836278132)
+Error <inode      >: addrs out of bounds direct reference. (539775790)
+Error <inode      >: addrs out of bounds direct reference. (778396777)
+Error <inode      >: addrs out of bounds direct reference. (1663052899)
+Error <inode      >: addrs out of bounds direct reference. (1869835887)
+Error <inode      >: addrs out of bounds direct reference. (1663985004)
+Error <inode      >: addrs out of bounds direct reference. (1851858988)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(14963)
+major: 8202
+minor: 8224
+nlink: 18976
+size: 673207119
+addrs: [778924897, 1696607336, 1747871340, 1835868204, 745025141, 1869570592, 1836278132, 539775790, 778396777, 1663052899, 1869835887, 1663985004, 1851858988, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1817190432)
+Error <inode      >: addrs out of bounds direct reference. (958426721)
+Error <inode      >: addrs out of bounds direct reference. (1852123168)
+Error <inode      >: addrs out of bounds direct reference. (1870230132)
+Error <inode      >: addrs out of bounds direct reference. (1919248500)
+Error <inode      >: addrs out of bounds direct reference. (539775790)
+Error <inode      >: addrs out of bounds direct reference. (1747873901)
+Error <inode      >: addrs out of bounds direct reference. (1886199852)
+Error <inode      >: addrs out of bounds direct reference. (539779886)
+Error <inode      >: addrs out of bounds direct reference. (1768972652)
+Error <inode      >: addrs out of bounds direct reference. (694365795)
+Error <inode      >: addrs out of bounds direct reference. (538976266)
+Error <inode      >: addrs out of bounds direct reference. (1701987872)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(8292)
+major: 29807
+minor: 25960
+nlink: 29554
+size: 538970665
+addrs: [1817190432, 958426721, 1852123168, 1870230132, 1919248500, 539775790, 1747873901, 1886199852, 539779886, 1768972652, 694365795, 538976266, 1701987872, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (170484526)
+Error <inode      >: addrs out of bounds direct reference. (538976288)
+Error <inode      >: addrs out of bounds direct reference. (1114924366)
+Error <inode      >: addrs out of bounds direct reference. (673203283)
+Error <inode      >: addrs out of bounds direct reference. (1936617315)
+Error <inode      >: addrs out of bounds direct reference. (778398831)
+Error <inode      >: addrs out of bounds direct reference. (168438115)
+Error <inode      >: addrs out of bounds direct reference. (543516756)
+Error <inode      >: addrs out of bounds direct reference. (1819045734)
+Error <inode      >: addrs out of bounds direct reference. (1852405615)
+Error <inode      >: addrs out of bounds direct reference. (1701847143)
+Error <inode      >: addrs out of bounds direct reference. (1701605487)
+Error <inode      >: addrs out of bounds direct reference. (1986095136)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(16997)
+major: 17491
+minor: 10272
+nlink: 28521
+size: 1667854433
+addrs: [170484526, 538976288, 1114924366, 673203283, 1936617315, 778398831, 168438115, 543516756, 1819045734, 1852405615, 1701847143, 1701605487, 1986095136, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1953849961)
+Error <inode      >: addrs out of bounds direct reference. (1936617321)
+Error <inode      >: addrs out of bounds direct reference. (1968316474)
+Error <inode      >: addrs out of bounds direct reference. (1126200179)
+Error <inode      >: addrs out of bounds direct reference. (673216623)
+Error <inode      >: addrs out of bounds direct reference. (1953394531)
+Error <inode      >: addrs out of bounds direct reference. (544503909)
+Error <inode      >: addrs out of bounds direct reference. (1953068915)
+Error <inode      >: addrs out of bounds direct reference. (1852401763)
+Error <inode      >: addrs out of bounds direct reference. (1812606055)
+Error <inode      >: addrs out of bounds direct reference. (1768645487)
+Error <inode      >: addrs out of bounds direct reference. (740910958)
+Error <inode      >: addrs out of bounds direct reference. (1768702752)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(8293)
+major: 24941
+minor: 25956
+nlink: 25376
+size: 1920233071
+addrs: [1953849961, 1936617321, 1968316474, 1126200179, 673216623, 1953394531, 544503909, 1953068915, 1852401763, 1812606055, 1768645487, 740910958, 1768702752, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1767383084)
+Error <inode      >: addrs out of bounds direct reference. (1495297889)
+Error <inode      >: addrs out of bounds direct reference. (1294475381)
+Error <inode      >: addrs out of bounds direct reference. (539765072)
+Error <inode      >: addrs out of bounds direct reference. (1801677134)
+Error <inode      >: addrs out of bounds direct reference. (1767992431)
+Error <inode      >: addrs out of bounds direct reference. (1818581536)
+Error <inode      >: addrs out of bounds direct reference. (1769369444)
+Error <inode      >: addrs out of bounds direct reference. (539781219)
+Error <inode      >: addrs out of bounds direct reference. (543452769)
+Error <inode      >: addrs out of bounds direct reference. (1953723713)
+Error <inode      >: addrs out of bounds direct reference. (1124757097)
+Error <inode      >: addrs out of bounds direct reference. (1701668204)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(26214)
+major: 17952
+minor: 25970
+nlink: 8313
+size: 693128488
+addrs: [1767383084, 1495297889, 1294475381, 539765072, 1801677134, 1767992431, 1818581536, 1769369444, 539781219, 543452769, 1953723713, 1124757097, 1701668204, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1936482592)
+Error <inode      >: addrs out of bounds direct reference. (1919361135)
+Error <inode      >: addrs out of bounds direct reference. (1717924961)
+Error <inode      >: addrs out of bounds direct reference. (1713400949)
+Error <inode      >: addrs out of bounds direct reference. (1948283503)
+Error <inode      >: addrs out of bounds direct reference. (1646290280)
+Error <inode      >: addrs out of bounds direct reference. (1914726261)
+Error <inode      >: addrs out of bounds direct reference. (1919905893)
+Error <inode      >: addrs out of bounds direct reference. (1629516660)
+Error <inode      >: addrs out of bounds direct reference. (1881171054)
+Error <inode      >: addrs out of bounds direct reference. (1751348321)
+Error <inode      >: addrs out of bounds direct reference. (1663071077)
+Error <inode      >: addrs out of bounds direct reference. (1920233071)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(29806)
+major: 11891
+minor: 2570
+nlink: 25943
+size: 1701994784
+addrs: [1936482592, 1919361135, 1717924961, 1713400949, 1948283503, 1646290280, 1914726261, 1919905893, 1629516660, 1881171054, 1751348321, 1663071077, 1920233071, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (175333740)
+Error <inode      >: addrs out of bounds direct reference. (1685679938)
+Error <inode      >: addrs out of bounds direct reference. (1667847981)
+Error <inode      >: addrs out of bounds direct reference. (1702521195)
+Error <inode      >: addrs out of bounds direct reference. (1092627570)
+Error <inode      >: addrs out of bounds direct reference. (1852798062)
+Error <inode      >: addrs out of bounds direct reference. (1920287264)
+Error <inode      >: addrs out of bounds direct reference. (1986360180)
+Error <inode      >: addrs out of bounds direct reference. (1866670124)
+Error <inode      >: addrs out of bounds direct reference. (1126201700)
+Error <inode      >: addrs out of bounds direct reference. (1701606517)
+Error <inode      >: addrs out of bounds direct reference. (1293954162)
+Error <inode      >: addrs out of bounds direct reference. (543517545)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(25193)
+major: 29813
+minor: 25701
+nlink: 25120
+size: 1767055481
+addrs: [175333740, 1685679938, 1667847981, 1702521195, 1092627570, 1852798062, 1920287264, 1986360180, 1866670124, 1126201700, 1701606517, 1293954162, 543517545, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (744777066)
+Error <inode      >: addrs out of bounds direct reference. (1635345696)
+Error <inode      >: addrs out of bounds direct reference. (809007724)
+Error <inode      >: addrs out of bounds direct reference. (1309289520)
+Error <inode      >: addrs out of bounds direct reference. (1869835365)
+Error <inode      >: addrs out of bounds direct reference. (1816469614)
+Error <inode      >: addrs out of bounds direct reference. (1701273960)
+Error <inode      >: addrs out of bounds direct reference. (1632837676)
+Error <inode      >: addrs out of bounds direct reference. (1159754337)
+Error <inode      >: addrs out of bounds direct reference. (1852404852)
+Error <inode      >: addrs out of bounds direct reference. (745694567)
+Error <inode      >: addrs out of bounds direct reference. (1768702240)
+Error <inode      >: addrs out of bounds direct reference. (1176528227)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(16707)
+major: 11348
+minor: 21536
+nlink: 27237
+size: 1634222880
+addrs: [744777066, 1635345696, 809007724, 1309289520, 1869835365, 1816469614, 1701273960, 1632837676, 1159754337, 1852404852, 745694567, 1768702240, 1176528227, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1768841576)
+Error <inode      >: addrs out of bounds direct reference. (1176530021)
+Error <inode      >: addrs out of bounds direct reference. (1918987369)
+Error <inode      >: addrs out of bounds direct reference. (539783012)
+Error <inode      >: addrs out of bounds direct reference. (1702126928)
+Error <inode      >: addrs out of bounds direct reference. (1917192818)
+Error <inode      >: addrs out of bounds direct reference. (1818781039)
+Error <inode      >: addrs out of bounds direct reference. (745038697)
+Error <inode      >: addrs out of bounds direct reference. (1801541920)
+Error <inode      >: addrs out of bounds direct reference. (1193308777)
+Error <inode      >: addrs out of bounds direct reference. (1869767023)
+Error <inode      >: addrs out of bounds direct reference. (1750281326)
+Error <inode      >: addrs out of bounds direct reference. (1835103849)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(29285)
+major: 24946
+minor: 31354
+nlink: 11369
+size: 1952534048
+addrs: [1768841576, 1176530021, 1918987369, 539783012, 1702126928, 1917192818, 1818781039, 745038697, 1801541920, 1193308777, 1869767023, 1750281326, 1835103849, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1699225710)
+Error <inode      >: addrs out of bounds direct reference. (746156654)
+Error <inode      >: addrs out of bounds direct reference. (1835616800)
+Error <inode      >: addrs out of bounds direct reference. (1635076128)
+Error <inode      >: addrs out of bounds direct reference. (539780974)
+Error <inode      >: addrs out of bounds direct reference. (2019912769)
+Error <inode      >: addrs out of bounds direct reference. (1701080673)
+Error <inode      >: addrs out of bounds direct reference. (1632307826)
+Error <inode      >: addrs out of bounds direct reference. (1969779568)
+Error <inode      >: addrs out of bounds direct reference. (1092627563)
+Error <inode      >: addrs out of bounds direct reference. (1919247470)
+Error <inode      >: addrs out of bounds direct reference. (1632313459)
+Error <inode      >: addrs out of bounds direct reference. (1919903091)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(18464)
+major: 28257
+minor: 24932
+nlink: 8236
+size: 1635349058
+addrs: [1699225710, 746156654, 1835616800, 1635076128, 539780974, 2019912769, 1701080673, 1632307826, 1969779568, 1092627563, 1919247470, 1632313459, 1919903091, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1718382423)
+Error <inode      >: addrs out of bounds direct reference. (1735287143)
+Error <inode      >: addrs out of bounds direct reference. (1818577696)
+Error <inode      >: addrs out of bounds direct reference. (745694572)
+Error <inode      >: addrs out of bounds direct reference. (1684292896)
+Error <inode      >: addrs out of bounds direct reference. (1260414313)
+Error <inode      >: addrs out of bounds direct reference. (1701603439)
+Error <inode      >: addrs out of bounds direct reference. (1092627570)
+Error <inode      >: addrs out of bounds direct reference. (1769239413)
+Error <inode      >: addrs out of bounds direct reference. (1766591086)
+Error <inode      >: addrs out of bounds direct reference. (539785061)
+Error <inode      >: addrs out of bounds direct reference. (1633840457)
+Error <inode      >: addrs out of bounds direct reference. (1632444530)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(11367)
+major: 27424
+minor: 26725
+nlink: 28513
+size: 539768121
+addrs: [1718382423, 1735287143, 1818577696, 745694572, 1684292896, 1260414313, 1701603439, 1092627570, 1769239413, 1766591086, 539785061, 1633840457, 1632444530, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1735290724)
+Error <inode      >: addrs out of bounds direct reference. (1868647712)
+Error <inode      >: addrs out of bounds direct reference. (1632444460)
+Error <inode      >: addrs out of bounds direct reference. (544104820)
+Error <inode      >: addrs out of bounds direct reference. (1650550867)
+Error <inode      >: addrs out of bounds direct reference. (746152308)
+Error <inode      >: addrs out of bounds direct reference. (1953056800)
+Error <inode      >: addrs out of bounds direct reference. (1768452975)
+Error <inode      >: addrs out of bounds direct reference. (1953058080)
+Error <inode      >: addrs out of bounds direct reference. (744844129)
+Error <inode      >: addrs out of bounds direct reference. (1918976800)
+Error <inode      >: addrs out of bounds direct reference. (1292527981)
+Error <inode      >: addrs out of bounds direct reference. (1835627109)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(26994)
+major: 25966
+minor: 25459
+nlink: 11381
+size: 1851873568
+addrs: [1735290724, 1868647712, 1632444460, 544104820, 1650550867, 746152308, 1953056800, 1768452975, 1953058080, 744844129, 1918976800, 1292527981, 1835627109, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1920102221)
+Error <inode      >: addrs out of bounds direct reference. (1702065001)
+Error <inode      >: addrs out of bounds direct reference. (1830825081)
+Error <inode      >: addrs out of bounds direct reference. (1836278132)
+Error <inode      >: addrs out of bounds direct reference. (1867128876)
+Error <inode      >: addrs out of bounds direct reference. (1310747749)
+Error <inode      >: addrs out of bounds direct reference. (1919247465)
+Error <inode      >: addrs out of bounds direct reference. (1917263916)
+Error <inode      >: addrs out of bounds direct reference. (1344300901)
+Error <inode      >: addrs out of bounds direct reference. (1701013874)
+Error <inode      >: addrs out of bounds direct reference. (2034311212)
+Error <inode      >: addrs out of bounds direct reference. (1394634337)
+Error <inode      >: addrs out of bounds direct reference. (1902535016)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(30319)
+major: 25449
+minor: 11368
+nlink: 19744
+size: 543912545
+addrs: [1920102221, 1702065001, 1830825081, 1836278132, 1867128876, 1310747749, 1919247465, 1917263916, 1344300901, 1701013874, 2034311212, 1394634337, 1902535016, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1702453608)
+Error <inode      >: addrs out of bounds direct reference. (1495280747)
+Error <inode      >: addrs out of bounds direct reference. (1835495023)
+Error <inode      >: addrs out of bounds direct reference. (543649385)
+Error <inode      >: addrs out of bounds direct reference. (1852139603)
+Error <inode      >: addrs out of bounds direct reference. (1631789100)
+Error <inode      >: addrs out of bounds direct reference. (1700012141)
+Error <inode      >: addrs out of bounds direct reference. (746155630)
+Error <inode      >: addrs out of bounds direct reference. (1719235616)
+Error <inode      >: addrs out of bounds direct reference. (744580203)
+Error <inode      >: addrs out of bounds direct reference. (1717654048)
+Error <inode      >: addrs out of bounds direct reference. (543974753)
+Error <inode      >: addrs out of bounds direct reference. (1818321493)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(29793)
+major: 2604
+minor: 27717
+nlink: 24932
+size: 1699946610
+addrs: [1702453608, 1495280747, 1835495023, 543649385, 1852139603, 1631789100, 1700012141, 746155630, 1719235616, 744580203, 1717654048, 543974753, 1818321493, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (746153325)
+Error <inode      >: addrs out of bounds direct reference. (1702122272)
+Error <inode      >: addrs out of bounds direct reference. (1852139632)
+Error <inode      >: addrs out of bounds direct reference. (745886752)
+Error <inode      >: addrs out of bounds direct reference. (1650544672)
+Error <inode      >: addrs out of bounds direct reference. (1444966252)
+Error <inode      >: addrs out of bounds direct reference. (1970564709)
+Error <inode      >: addrs out of bounds direct reference. (539779442)
+Error <inode      >: addrs out of bounds direct reference. (1461741912)
+Error <inode      >: addrs out of bounds direct reference. (744975969)
+Error <inode      >: addrs out of bounds direct reference. (1768246048)
+Error <inode      >: addrs out of bounds direct reference. (1768448873)
+Error <inode      >: addrs out of bounds direct reference. (1952536352)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(8236)
+major: 24919
+minor: 29298
+nlink: 28261
+size: 1869566986
+addrs: [746153325, 1702122272, 1852139632, 745886752, 1650544672, 1444966252, 1970564709, 539779442, 1461741912, 744975969, 1768246048, 1768448873, 1952536352, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1460302689)
+Error <inode      >: addrs out of bounds direct reference. (1987013743)
+Error <inode      >: addrs out of bounds direct reference. (745235305)
+Error <inode      >: addrs out of bounds direct reference. (1685616416)
+Error <inode      >: addrs out of bounds direct reference. (539783009)
+Error <inode      >: addrs out of bounds direct reference. (1851880007)
+Error <inode      >: addrs out of bounds direct reference. (1968644212)
+Error <inode      >: addrs out of bounds direct reference. (1766465580)
+Error <inode      >: addrs out of bounds direct reference. (1852793966)
+Error <inode      >: addrs out of bounds direct reference. (1750736999)
+Error <inode      >: addrs out of bounds direct reference. (744975969)
+Error <inode      >: addrs out of bounds direct reference. (1701005600)
+Error <inode      >: addrs out of bounds direct reference. (2037870446)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(28257)
+major: 25185
+minor: 11365
+nlink: 20000
+size: 1819239273
+addrs: [1460302689, 1987013743, 745235305, 1685616416, 539783009, 1851880007, 1968644212, 1766465580, 1852793966, 1750736999, 744975969, 1701005600, 2037870446, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (544567130)
+Error <inode      >: addrs out of bounds direct reference. (1851877443)
+Error <inode      >: addrs out of bounds direct reference. (1700208743)
+Error <inode      >: addrs out of bounds direct reference. (168439401)
+Error <inode      >: addrs out of bounds direct reference. (543516756)
+Error <inode      >: addrs out of bounds direct reference. (1701080931)
+Error <inode      >: addrs out of bounds direct reference. (544106784)
+Error <inode      >: addrs out of bounds direct reference. (543516788)
+Error <inode      >: addrs out of bounds direct reference. (1701603686)
+Error <inode      >: addrs out of bounds direct reference. (1752440947)
+Error <inode      >: addrs out of bounds direct reference. (1663071329)
+Error <inode      >: addrs out of bounds direct reference. (1953721967)
+Error <inode      >: addrs out of bounds direct reference. (1953854569)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(23072)
+major: 25960
+minor: 26478
+nlink: 8236
+size: 543452769
+addrs: [544567130, 1851877443, 1700208743, 168439401, 543516756, 1701080931, 544106784, 543516788, 1701603686, 1752440947, 1663071329, 1953721967, 1953854569, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1734963833)
+Error <inode      >: addrs out of bounds direct reference. (840987752)
+Error <inode      >: addrs out of bounds direct reference. (758526000)
+Error <inode      >: addrs out of bounds direct reference. (942747698)
+Error <inode      >: addrs out of bounds direct reference. (1634879008)
+Error <inode      >: addrs out of bounds direct reference. (1260417902)
+Error <inode      >: addrs out of bounds direct reference. (1752392033)
+Error <inode      >: addrs out of bounds direct reference. (745235823)
+Error <inode      >: addrs out of bounds direct reference. (1651462688)
+Error <inode      >: addrs out of bounds direct reference. (544502373)
+Error <inode      >: addrs out of bounds direct reference. (1920102221)
+Error <inode      >: addrs out of bounds direct reference. (539784041)
+Error <inode      >: addrs out of bounds direct reference. (543452769)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(8293)
+major: 30328
+minor: 8246
+nlink: 29545
+size: 1886339850
+addrs: [1734963833, 840987752, 758526000, 942747698, 1634879008, 1260417902, 1752392033, 745235823, 1651462688, 544502373, 1920102221, 539784041, 543452769, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1380930130)
+Error <inode      >: addrs out of bounds direct reference. (1346720288)
+Error <inode      >: addrs out of bounds direct reference. (1398035023)
+Error <inode      >: addrs out of bounds direct reference. (1817184778)
+Error <inode      >: addrs out of bounds direct reference. (1702060389)
+Error <inode      >: addrs out of bounds direct reference. (1852142368)
+Error <inode      >: addrs out of bounds direct reference. (1919230052)
+Error <inode      >: addrs out of bounds direct reference. (1936879474)
+Error <inode      >: addrs out of bounds direct reference. (1684955424)
+Error <inode      >: addrs out of bounds direct reference. (1735750432)
+Error <inode      >: addrs out of bounds direct reference. (1953719655)
+Error <inode      >: addrs out of bounds direct reference. (1936617321)
+Error <inode      >: addrs out of bounds direct reference. (544175136)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(30034)
+major: 29555
+minor: 17184
+nlink: 30831
+size: 1158285870
+addrs: [1380930130, 1346720288, 1398035023, 1817184778, 1702060389, 1852142368, 1919230052, 1936879474, 1684955424, 1735750432, 1953719655, 1936617321, 544175136, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1629514597)
+Error <inode      >: addrs out of bounds direct reference. (1377854574)
+Error <inode      >: addrs out of bounds direct reference. (1919246959)
+Error <inode      >: addrs out of bounds direct reference. (1867325556)
+Error <inode      >: addrs out of bounds direct reference. (1936290418)
+Error <inode      >: addrs out of bounds direct reference. (1634412554)
+Error <inode      >: addrs out of bounds direct reference. (1869116257)
+Error <inode      >: addrs out of bounds direct reference. (1915513701)
+Error <inode      >: addrs out of bounds direct reference. (1832938868)
+Error <inode      >: addrs out of bounds direct reference. (1697543273)
+Error <inode      >: addrs out of bounds direct reference. (774468964)
+Error <inode      >: addrs out of bounds direct reference. (1701336096)
+Error <inode      >: addrs out of bounds direct reference. (1767992608)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(29254)
+major: 28257
+minor: 8307
+nlink: 24907
+size: 1869116257
+addrs: [1629514597, 1377854574, 1919246959, 1867325556, 1936290418, 1634412554, 1869116257, 1915513701, 1832938868, 1697543273, 774468964, 1701336096, 1767992608, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (913733664)
+Error <inode      >: addrs out of bounds direct reference. (544434464)
+Error <inode      >: addrs out of bounds direct reference. (1629516641)
+Error <inode      >: addrs out of bounds direct reference. (1634038816)
+Error <inode      >: addrs out of bounds direct reference. (1852401763)
+Error <inode      >: addrs out of bounds direct reference. (1886325351)
+Error <inode      >: addrs out of bounds direct reference. (1952543333)
+Error <inode      >: addrs out of bounds direct reference. (543649385)
+Error <inode      >: addrs out of bounds direct reference. (1953724787)
+Error <inode      >: addrs out of bounds direct reference. (1713401189)
+Error <inode      >: addrs out of bounds direct reference. (1293972079)
+Error <inode      >: addrs out of bounds direct reference. (1931957321)
+Error <inode      >: addrs out of bounds direct reference. (942552608)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(8302)
+major: 30064
+minor: 28786
+nlink: 29551
+size: 1718558821
+addrs: [913733664, 544434464, 1629516641, 1634038816, 1852401763, 1886325351, 1952543333, 543649385, 1953724787, 1713401189, 1293972079, 1931957321, 942552608, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1869422693)
+Error <inode      >: addrs out of bounds direct reference. (1763730802)
+Error <inode      >: addrs out of bounds direct reference. (1919251566)
+Error <inode      >: addrs out of bounds direct reference. (1702130533)
+Error <inode      >: addrs out of bounds direct reference. (1852383332)
+Error <inode      >: addrs out of bounds direct reference. (1835627274)
+Error <inode      >: addrs out of bounds direct reference. (1718185072)
+Error <inode      >: addrs out of bounds direct reference. (1952539497)
+Error <inode      >: addrs out of bounds direct reference. (1936617321)
+Error <inode      >: addrs out of bounds direct reference. (1684955424)
+Error <inode      >: addrs out of bounds direct reference. (1634493216)
+Error <inode      >: addrs out of bounds direct reference. (1768319346)
+Error <inode      >: addrs out of bounds direct reference. (1769234787)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(14386)
+major: 8236
+minor: 28531
+nlink: 30496
+size: 1918967909
+addrs: [1869422693, 1763730802, 1919251566, 1702130533, 1852383332, 1835627274, 1718185072, 1952539497, 1936617321, 1684955424, 1634493216, 1768319346, 1769234787, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1634035232)
+Error <inode      >: addrs out of bounds direct reference. (1701999988)
+Error <inode      >: addrs out of bounds direct reference. (168439411)
+Error <inode      >: addrs out of bounds direct reference. (1279874370)
+Error <inode      >: addrs out of bounds direct reference. (1196312900)
+Error <inode      >: addrs out of bounds direct reference. (1145979168)
+Error <inode      >: addrs out of bounds direct reference. (1314214432)
+Error <inode      >: addrs out of bounds direct reference. (1196312910)
+Error <inode      >: addrs out of bounds direct reference. (911628320)
+Error <inode      >: addrs out of bounds direct reference. (1867778570)
+Error <inode      >: addrs out of bounds direct reference. (1769300512)
+Error <inode      >: addrs out of bounds direct reference. (2015388780)
+Error <inode      >: addrs out of bounds direct reference. (1864382070)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(28271)
+major: 8307
+minor: 26740
+nlink: 28257
+size: 2003136032
+addrs: [1634035232, 1701999988, 168439411, 1279874370, 1196312900, 1145979168, 1314214432, 1196312910, 911628320, 1867778570, 1769300512, 2015388780, 1864382070, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1667329312)
+Error <inode      >: addrs out of bounds direct reference. (1701734760)
+Error <inode      >: addrs out of bounds direct reference. (1768695840)
+Error <inode      >: addrs out of bounds direct reference. (1277191531)
+Error <inode      >: addrs out of bounds direct reference. (2020961897)
+Error <inode      >: addrs out of bounds direct reference. (544370464)
+Error <inode      >: addrs out of bounds direct reference. (1701147206)
+Error <inode      >: addrs out of bounds direct reference. (692343618)
+Error <inode      >: addrs out of bounds direct reference. (1970413612)
+Error <inode      >: addrs out of bounds direct reference. (1830947438)
+Error <inode      >: addrs out of bounds direct reference. (577071969)
+Error <inode      >: addrs out of bounds direct reference. (1850679342)
+Error <inode      >: addrs out of bounds direct reference. (1852796448)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(8302)
+major: 28257
+minor: 30752
+nlink: 13880
+size: 1179403552
+addrs: [1667329312, 1701734760, 1768695840, 1277191531, 2020961897, 544370464, 1701147206, 692343618, 1970413612, 1830947438, 577071969, 1850679342, 1852796448, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (541477957)
+Error <inode      >: addrs out of bounds direct reference. (1751343469)
+Error <inode      >: addrs out of bounds direct reference. (1936027241)
+Error <inode      >: addrs out of bounds direct reference. (1768695840)
+Error <inode      >: addrs out of bounds direct reference. (1327523179)
+Error <inode      >: addrs out of bounds direct reference. (743972947)
+Error <inode      >: addrs out of bounds direct reference. (1702257952)
+Error <inode      >: addrs out of bounds direct reference. (1852776558)
+Error <inode      >: addrs out of bounds direct reference. (909670432)
+Error <inode      >: addrs out of bounds direct reference. (2032151593)
+Error <inode      >: addrs out of bounds direct reference. (1997174127)
+Error <inode      >: addrs out of bounds direct reference. (543976553)
+Error <inode      >: addrs out of bounds direct reference. (1684366702)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(30765)
+major: 13880
+minor: 28448
+nlink: 8306
+size: 762212206
+addrs: [541477957, 1751343469, 1936027241, 1768695840, 1327523179, 743972947, 1702257952, 1852776558, 909670432, 2032151593, 1997174127, 543976553, 1684366702, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1919098977)
+Error <inode      >: addrs out of bounds direct reference. (762540911)
+Error <inode      >: addrs out of bounds direct reference. (1886220131)
+Error <inode      >: addrs out of bounds direct reference. (1919249513)
+Error <inode      >: addrs out of bounds direct reference. (1667458848)
+Error <inode      >: addrs out of bounds direct reference. (1769304864)
+Error <inode      >: addrs out of bounds direct reference. (1663067508)
+Error <inode      >: addrs out of bounds direct reference. (1650552929)
+Error <inode      >: addrs out of bounds direct reference. (1864394092)
+Error <inode      >: addrs out of bounds direct reference. (1919950950)
+Error <inode      >: addrs out of bounds direct reference. (1668637807)
+Error <inode      >: addrs out of bounds direct reference. (174550633)
+Error <inode      >: addrs out of bounds direct reference. (540424312)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(29728)
+major: 8303
+minor: 28265
+nlink: 29811
+size: 543976545
+addrs: [1919098977, 762540911, 1886220131, 1919249513, 1667458848, 1769304864, 1663067508, 1650552929, 1864394092, 1919950950, 1668637807, 174550633, 540424312, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1702045728)
+Error <inode      >: addrs out of bounds direct reference. (1952981093)
+Error <inode      >: addrs out of bounds direct reference. (980643956)
+Error <inode      >: addrs out of bounds direct reference. (1685073711)
+Error <inode      >: addrs out of bounds direct reference. (1663988591)
+Error <inode      >: addrs out of bounds direct reference. (1818845555)
+Error <inode      >: addrs out of bounds direct reference. (1953066286)
+Error <inode      >: addrs out of bounds direct reference. (1969513774)
+Error <inode      >: addrs out of bounds direct reference. (942552623)
+Error <inode      >: addrs out of bounds direct reference. (690960434)
+Error <inode      >: addrs out of bounds direct reference. (1750338094)
+Error <inode      >: addrs out of bounds direct reference. (1914728037)
+Error <inode      >: addrs out of bounds direct reference. (572550773)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(19525)
+major: 8262
+minor: 26978
+nlink: 24942
+size: 1936025970
+addrs: [1702045728, 1952981093, 980643956, 1685073711, 1663988591, 1818845555, 1953066286, 1969513774, 942552623, 690960434, 1750338094, 1914728037, 572550773, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1029196102)
+Error <inode      >: addrs out of bounds direct reference. (909652841)
+Error <inode      >: addrs out of bounds direct reference. (1936681517)
+Error <inode      >: addrs out of bounds direct reference. (1718379821)
+Error <inode      >: addrs out of bounds direct reference. (539894317)
+Error <inode      >: addrs out of bounds direct reference. (544698190)
+Error <inode      >: addrs out of bounds direct reference. (1953721961)
+Error <inode      >: addrs out of bounds direct reference. (543976545)
+Error <inode      >: addrs out of bounds direct reference. (543516788)
+Error <inode      >: addrs out of bounds direct reference. (1431127377)
+Error <inode      >: addrs out of bounds direct reference. (172183584)
+Error <inode      >: addrs out of bounds direct reference. (1970104691)
+Error <inode      >: addrs out of bounds direct reference. (1869898092)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(24941)
+major: 25963
+minor: 21536
+nlink: 20303
+size: 1163022412
+addrs: [1029196102, 909652841, 1936681517, 1718379821, 539894317, 544698190, 1953721961, 543976545, 543516788, 1431127377, 172183584, 1970104691, 1869898092, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (543517537)
+Error <inode      >: addrs out of bounds direct reference. (1970103665)
+Error <inode      >: addrs out of bounds direct reference. (667170)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(8306)
+major: 28257
+minor: 8292
+nlink: 30066
+size: 1830953070
+addrs: [543517537, 1970103665, 667170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (196610)
+Error <inode      >: addrs out of bounds direct reference. (1)
+Error <inode      >: addrs out of bounds direct reference. (52)
+Error <inode      >: addrs out of bounds direct reference. (10268)
+Error <inode      >: addrs out of bounds direct reference. (2097204)
+Error <inode      >: addrs out of bounds direct reference. (2621441)
+Error <inode      >: addrs out of bounds direct reference. (851984)
+Error <inode      >: addrs out of bounds direct reference. (1)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(17791)
+major: 17996
+minor: 257
+nlink: 1
+size: 0
+addrs: [0, 196610, 1, 0, 52, 10268, 0, 2097204, 2621441, 851984, 1, 96, 0, ]
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'addrs'
+Error <inode      >: Unused inode has non-zero 'size'
+type: UNUSED
+major: 0
+minor: 2492
+nlink: 0
+size: 3040
+addrs: [7, 32, 0, 0, 0, 1474660693, 3833811798, 552371184, 2198371723, 1719534079, 2198625675, 29230275, 2415919104, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (48687140)
+Error <inode      >: addrs out of bounds direct reference. (3229941760)
+Error <inode      >: addrs out of bounds direct reference. (76096888)
+Error <inode      >: addrs out of bounds direct reference. (608471332)
+Error <inode      >: addrs out of bounds direct reference. (4909084)
+Error <inode      >: addrs out of bounds direct reference. (1149960192)
+Error <inode      >: addrs out of bounds direct reference. (76094500)
+Error <inode      >: addrs out of bounds direct reference. (45279268)
+Error <inode      >: addrs out of bounds direct reference. (2202402816)
+Error <inode      >: addrs out of bounds direct reference. (4265149635)
+Error <inode      >: addrs out of bounds direct reference. (2112408181)
+Error <inode      >: addrs out of bounds direct reference. (2332033026)
+Error <inode      >: addrs out of bounds direct reference. (608471299)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(17607)
+major: 1060
+minor: 0
+nlink: 0
+size: 76088203
+addrs: [48687140, 3229941760, 76096888, 608471332, 4909084, 1149960192, 76094500, 45279268, 2202402816, 4265149635, 2112408181, 2332033026, 608471299, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1)
+Error <inode      >: addrs out of bounds direct reference. (234472)
+Error <inode      >: addrs out of bounds direct reference. (39774208)
+Error <inode      >: addrs out of bounds direct reference. (80150528)
+Error <inode      >: addrs out of bounds direct reference. (36)
+Error <inode      >: addrs out of bounds direct reference. (452608)
+Error <inode      >: addrs out of bounds direct reference. (1307049984)
+Error <inode      >: addrs out of bounds direct reference. (2415919106)
+Error <inode      >: addrs out of bounds direct reference. (1457883477)
+Error <inode      >: addrs out of bounds direct reference. (283935571)
+Error <inode      >: addrs out of bounds direct reference. (3943200139)
+Error <inode      >: addrs out of bounds direct reference. (7769375)
+Error <inode      >: addrs out of bounds direct reference. (136600713)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(50952)
+major: 9284
+minor: 48388
+nlink: 6
+size: 604292864
+addrs: [1, 234472, 39774208, 80150528, 36, 452608, 1307049984, 2415919106, 1457883477, 283935571, 3943200139, 7769375, 136600713, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (3892314112)
+Error <inode      >: addrs referenced unused block. (580)
+Error <inode      >: addrs out of bounds direct reference. (678811705)
+Error <inode      >: addrs out of bounds direct reference. (136594631)
+Error <inode      >: addrs out of bounds direct reference. (69485767)
+Error <inode      >: addrs out of bounds direct reference. (2528)
+Error <inode      >: addrs out of bounds direct reference. (3894686857)
+Error <inode      >: addrs referenced unused block. (544)
+Error <inode      >: addrs out of bounds direct reference. (4169384841)
+Error <inode      >: addrs out of bounds direct reference. (1975877376)
+Error <inode      >: addrs out of bounds direct reference. (281314080)
+Error <inode      >: addrs out of bounds direct reference. (3277676123)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(17607)
+major: 1060
+minor: 2528
+nlink: 0
+size: 19137735
+addrs: [3892314112, 580, 678811705, 136594631, 512, 69485767, 2528, 3894686857, 544, 4169384841, 1975877376, 281314080, 3277676123, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (3892314112)
+Error <inode      >: addrs referenced unused block. (788)
+Error <inode      >: addrs out of bounds direct reference. (122856)
+Error <inode      >: addrs out of bounds direct reference. (608487168)
+Error <inode      >: addrs out of bounds direct reference. (437252)
+Error <inode      >: addrs out of bounds direct reference. (604292864)
+Error <inode      >: addrs out of bounds direct reference. (1)
+Error <inode      >: addrs out of bounds direct reference. (195560)
+Error <inode      >: addrs out of bounds direct reference. (29812736)
+Error <inode      >: addrs out of bounds direct reference. (2425356288)
+Error <inode      >: addrs out of bounds direct reference. (1407551829)
+Error <inode      >: addrs out of bounds direct reference. (2332575115)
+Error <inode      >: addrs out of bounds direct reference. (3526429789)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(17607)
+major: 1060
+minor: 1690
+nlink: 0
+size: 19137735
+addrs: [3892314112, 788, 122856, 608487168, 437252, 604292864, 1, 195560, 29812736, 2425356288, 1407551829, 2332575115, 3526429789, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (2422653789)
+Error <inode      >: addrs out of bounds direct reference. (1457883477)
+Error <inode      >: addrs out of bounds direct reference. (139299667)
+Error <inode      >: addrs out of bounds direct reference. (2316064139)
+Error <inode      >: addrs out of bounds direct reference. (2216331777)
+Error <inode      >: addrs out of bounds direct reference. (941454528)
+Error <inode      >: addrs out of bounds direct reference. (3943462104)
+Error <inode      >: addrs out of bounds direct reference. (7769379)
+Error <inode      >: addrs out of bounds direct reference. (1977104449)
+Error <inode      >: addrs out of bounds direct reference. (2381482267)
+Error <inode      >: addrs out of bounds direct reference. (1099563378)
+Error <inode      >: addrs out of bounds direct reference. (22710785)
+Error <inode      >: addrs out of bounds direct reference. (3967139972)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(3210)
+major: 34835
+minor: 4108
+nlink: 33858
+size: 1542813129
+addrs: [2422653789, 1457883477, 139299667, 2316064139, 2216331777, 941454528, 3943462104, 7769379, 1977104449, 2381482267, 1099563378, 22710785, 3967139972, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (264287759)
+Error <inode      >: addrs out of bounds direct reference. (3626621878)
+Error <inode      >: addrs out of bounds direct reference. (3277676123)
+Error <inode      >: addrs out of bounds direct reference. (2347075925)
+Error <inode      >: addrs out of bounds direct reference. (964692045)
+Error <inode      >: addrs out of bounds direct reference. (823161856)
+Error <inode      >: addrs out of bounds direct reference. (7769554)
+Error <inode      >: addrs out of bounds direct reference. (2161150274)
+Error <inode      >: addrs out of bounds direct reference. (1962938684)
+Error <inode      >: addrs out of bounds direct reference. (834887159)
+Error <inode      >: addrs out of bounds direct reference. (2428722624)
+Error <inode      >: addrs out of bounds direct reference. (1474660693)
+Error <inode      >: addrs out of bounds direct reference. (2299024779)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(49201)
+major: 46607
+minor: 10715
+nlink: 23512
+size: 2428722526
+addrs: [264287759, 3626621878, 3277676123, 2347075925, 964692045, 823161856, 7769554, 2161150274, 1962938684, 834887159, 2428722624, 1474660693, 2299024779, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (2428722527)
+Error <inode      >: addrs out of bounds direct reference. (2347075925)
+Error <inode      >: addrs out of bounds direct reference. (1300891717)
+Error <inode      >: addrs out of bounds direct reference. (2215676428)
+Error <inode      >: addrs out of bounds direct reference. (3943527890)
+Error <inode      >: addrs out of bounds direct reference. (7769363)
+Error <inode      >: addrs out of bounds direct reference. (2214678666)
+Error <inode      >: addrs out of bounds direct reference. (1074361554)
+Error <inode      >: addrs out of bounds direct reference. (4101360184)
+Error <inode      >: addrs out of bounds direct reference. (2422653789)
+Error <inode      >: addrs out of bounds direct reference. (3277701169)
+Error <inode      >: addrs out of bounds direct reference. (1474660693)
+Error <inode      >: addrs out of bounds direct reference. (3968029526)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(35799)
+major: 4173
+minor: 17803
+nlink: 64524
+size: 3498683123
+addrs: [2428722527, 2347075925, 1300891717, 2215676428, 3943527890, 7769363, 2214678666, 1074361554, 4101360184, 2422653789, 3277701169, 1474660693, 3968029526, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1)
+Error <inode      >: addrs out of bounds direct reference. (2313635213)
+Error <inode      >: addrs out of bounds direct reference. (3338937412)
+Error <inode      >: addrs out of bounds direct reference. (9220)
+Error <inode      >: addrs out of bounds direct reference. (3991404544)
+Error <inode      >: addrs out of bounds direct reference. (2231369728)
+Error <inode      >: addrs out of bounds direct reference. (2316926656)
+Error <inode      >: addrs out of bounds direct reference. (1149822789)
+Error <inode      >: addrs out of bounds direct reference. (3733585695)
+Error <inode      >: addrs out of bounds direct reference. (208931388)
+Error <inode      >: addrs out of bounds direct reference. (141823292)
+Error <inode      >: addrs out of bounds direct reference. (989945485)
+Error <inode      >: addrs out of bounds direct reference. (3363572829)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(35628)
+major: 2173
+minor: 63025
+nlink: 12523
+size: 136594631
+addrs: [1, 2313635213, 3338937412, 9220, 3991404544, 2231369728, 2316926656, 1149822789, 3733585695, 208931388, 141823292, 989945485, 3363572829, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (2422653789)
+Error <inode      >: addrs out of bounds direct reference. (1457883477)
+Error <inode      >: addrs out of bounds direct reference. (283935571)
+Error <inode      >: addrs out of bounds direct reference. (69485767)
+Error <inode      >: addrs out of bounds direct reference. (2299020683)
+Error <inode      >: addrs out of bounds direct reference. (3454542852)
+Error <inode      >: addrs out of bounds direct reference. (2298478592)
+Error <inode      >: addrs out of bounds direct reference. (2025883075)
+Error <inode      >: addrs out of bounds direct reference. (205884195)
+Error <inode      >: addrs out of bounds direct reference. (69485705)
+Error <inode      >: addrs out of bounds direct reference. (3894680713)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: addrs out of bounds indirect reference. (208)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(1222)
+major: 55
+minor: 63625
+nlink: 50307
+size: 1600019244
+addrs: [2422653789, 1457883477, 283935571, 69485767, 0, 2299020683, 3454542852, 2298478592, 2025883075, 205884195, 69485705, 3894680713, 208, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1527825539)
+Error <inode      >: addrs out of bounds direct reference. (2428722526)
+Error <inode      >: addrs out of bounds direct reference. (4294967230)
+Error <inode      >: addrs out of bounds direct reference. (2431642623)
+Error <inode      >: addrs out of bounds direct reference. (1407551829)
+Error <inode      >: addrs out of bounds direct reference. (2315799947)
+Error <inode      >: addrs out of bounds direct reference. (3494022417)
+Error <inode      >: addrs out of bounds direct reference. (12060988)
+Error <inode      >: addrs out of bounds direct reference. (1996488704)
+Error <inode      >: addrs out of bounds direct reference. (7769368)
+Error <inode      >: addrs out of bounds direct reference. (260048013)
+Error <inode      >: addrs out of bounds direct reference. (1150145214)
+Error <inode      >: addrs out of bounds direct reference. (2319568962)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(50825)
+major: 7305
+minor: 59428
+nlink: 150
+size: 4035510272
+addrs: [1527825539, 2428722526, 4294967230, 2431642623, 1407551829, 2315799947, 3494022417, 12060988, 1996488704, 7769368, 260048013, 1150145214, 2319568962, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (1457883477)
+Error <inode      >: addrs out of bounds direct reference. (138775379)
+Error <inode      >: addrs out of bounds direct reference. (2332849547)
+Error <inode      >: addrs out of bounds direct reference. (3682930781)
+Error <inode      >: addrs out of bounds direct reference. (3526430078)
+Error <inode      >: addrs out of bounds direct reference. (2283146378)
+Error <inode      >: addrs out of bounds direct reference. (960630796)
+Error <inode      >: addrs out of bounds direct reference. (1542813146)
+Error <inode      >: addrs out of bounds direct reference. (2428722526)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs referenced unused block. (696)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(36113)
+major: 53338
+minor: 64384
+nlink: 30217
+size: 3277675499
+addrs: [1457883477, 138775379, 2332849547, 3682930781, 3526430078, 2283146378, 960630796, 1542813146, 2428722526, 440, 3275803904, 696, 3275803904, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (1464)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (4280)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (5560)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (1720)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (1976)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (4024)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(952)
+major: 0
+minor: 52480
+nlink: 49984
+size: 1208
+addrs: [3275803904, 1464, 3275803904, 4280, 3275803904, 5560, 3275803904, 1720, 3275803904, 1976, 3275803904, 4024, 3275803904, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (2232)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (5048)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (5304)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (2488)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (2744)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (3000)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(4536)
+major: 0
+minor: 52480
+nlink: 49984
+size: 4792
+addrs: [3275803904, 2232, 3275803904, 5048, 3275803904, 5304, 3275803904, 2488, 3275803904, 2744, 3275803904, 3000, 3275803904, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (3768)
+Error <inode      >: addrs out of bounds direct reference. (3275803904)
+Error <inode      >: addrs out of bounds direct reference. (2212858197)
+Error <inode      >: addrs out of bounds direct reference. (1434986732)
+Error <inode      >: addrs out of bounds direct reference. (608487412)
+Error <inode      >: addrs out of bounds direct reference. (4099247360)
+Error <inode      >: addrs out of bounds direct reference. (69489801)
+Error <inode      >: addrs out of bounds direct reference. (3894674569)
+Error <inode      >: addrs out of bounds direct reference. (4294967136)
+Error <inode      >: addrs out of bounds direct reference. (2422653897)
+Error <inode      >: addrs out of bounds direct reference. (1474660693)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(3256)
+major: 0
+minor: 52480
+nlink: 49984
+size: 3512
+addrs: [3275803904, 3768, 3275803904, 2212858197, 1434986732, 608487412, 264, 4099247360, 69489801, 3894674569, 4294967136, 2422653897, 1474660693, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (74767237)
+Error <inode      >: addrs out of bounds direct reference. (1249432197)
+Error <inode      >: addrs out of bounds direct reference. (3677486897)
+Error <inode      >: addrs out of bounds direct reference. (2422605035)
+Error <inode      >: addrs out of bounds direct reference. (3526480777)
+Error <inode      >: addrs out of bounds direct reference. (2458579447)
+Error <inode      >: addrs out of bounds direct reference. (1753)
+Error <inode      >: addrs out of bounds direct reference. (3625800840)
+Error <inode      >: addrs out of bounds direct reference. (2231456653)
+Error <inode      >: addrs out of bounds direct reference. (2246669760)
+Error <inode      >: addrs out of bounds direct reference. (3322443007)
+Error <inode      >: addrs out of bounds direct reference. (769135940)
+Error <inode      >: addrs out of bounds direct reference. (2365739917)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(21334)
+major: 60547
+minor: 35100
+nlink: 35270
+size: 140348368
+addrs: [74767237, 1249432197, 3677486897, 2422605035, 3526480777, 2458579447, 1753, 3625800840, 2231456653, 2246669760, 3322443007, 769135940, 2365739917, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (4294967176)
+Error <inode      >: addrs out of bounds direct reference. (4294673227)
+Error <inode      >: addrs out of bounds direct reference. (3296980597)
+Error <inode      >: addrs out of bounds direct reference. (1600019228)
+Error <inode      >: addrs out of bounds direct reference. (3640116061)
+Error <inode      >: addrs out of bounds direct reference. (2427448064)
+Error <inode      >: addrs out of bounds direct reference. (1474660693)
+Error <inode      >: addrs out of bounds direct reference. (3968029526)
+Error <inode      >: addrs out of bounds direct reference. (142445356)
+Error <inode      >: addrs out of bounds direct reference. (2316066187)
+Error <inode      >: addrs out of bounds direct reference. (1959363595)
+Error <inode      >: addrs out of bounds direct reference. (272993659)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(65370)
+major: 36966
+minor: 48655
+nlink: 7508
+size: 3908078040
+addrs: [4294967176, 4294673227, 3296980597, 1600019228, 3640116061, 447, 2427448064, 1474660693, 3968029526, 142445356, 2316066187, 1959363595, 272993659, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (3518893939)
+Error <inode      >: addrs out of bounds direct reference. (1105787017)
+Error <inode      >: addrs out of bounds direct reference. (1140850687)
+Error <inode      >: addrs out of bounds direct reference. (3380874122)
+Error <inode      >: addrs out of bounds direct reference. (3054459508)
+Error <inode      >: addrs out of bounds direct reference. (1962313161)
+Error <inode      >: addrs out of bounds direct reference. (637436899)
+Error <inode      >: addrs out of bounds direct reference. (4186172789)
+Error <inode      >: addrs out of bounds direct reference. (3246657380)
+Error <inode      >: addrs out of bounds direct reference. (2197815296)
+Error <inode      >: addrs out of bounds direct reference. (1349810425)
+Error <inode      >: addrs out of bounds direct reference. (1953560963)
+Error <inode      >: addrs out of bounds direct reference. (1945731915)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(17801)
+major: 12772
+minor: 60406
+nlink: 36887
+size: 1948645763
+addrs: [3518893939, 1105787017, 1140850687, 3380874122, 3054459508, 1962313161, 637436899, 4186172789, 3246657380, 2197815296, 1349810425, 1953560963, 1945731915, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (37)
+Error <inode      >: addrs out of bounds direct reference. (4186175625)
+Error <inode      >: addrs out of bounds direct reference. (2299556901)
+Error <inode      >: addrs out of bounds direct reference. (4192788557)
+Error <inode      >: addrs out of bounds direct reference. (2348810238)
+Error <inode      >: addrs out of bounds direct reference. (3188711501)
+Error <inode      >: addrs out of bounds direct reference. (3908602321)
+Error <inode      >: addrs out of bounds direct reference. (4294967020)
+Error <inode      >: addrs out of bounds direct reference. (2319709745)
+Error <inode      >: addrs out of bounds direct reference. (1976140811)
+Error <inode      >: addrs out of bounds direct reference. (7769513)
+Error <inode      >: addrs out of bounds direct reference. (1529660547)
+Error <inode      >: addrs out of bounds direct reference. (3277676382)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(27252)
+major: 63875
+minor: 3939
+nlink: 37252
+size: 3120562176
+addrs: [37, 4186175625, 2299556901, 4192788557, 2348810238, 3188711501, 3908602321, 4294967020, 2319709745, 1976140811, 7769513, 1529660547, 3277676382, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (3103784960)
+Error <inode      >: addrs out of bounds direct reference. (16)
+Error <inode      >: addrs out of bounds direct reference. (2346993035)
+Error <inode      >: addrs out of bounds direct reference. (3908602128)
+Error <inode      >: addrs out of bounds direct reference. (4294967004)
+Error <inode      >: addrs out of bounds direct reference. (82068867)
+Error <inode      >: addrs out of bounds direct reference. (1827272241)
+Error <inode      >: addrs out of bounds direct reference. (2432696319)
+Error <inode      >: addrs out of bounds direct reference. (2346993035)
+Error <inode      >: addrs out of bounds direct reference. (79725360)
+Error <inode      >: addrs out of bounds direct reference. (2246329737)
+Error <inode      >: addrs out of bounds direct reference. (2321183990)
+Error <inode      >: addrs out of bounds direct reference. (1959953430)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(9662)
+major: 0
+minor: 60160
+nlink: 37008
+size: 2360519
+addrs: [3103784960, 16, 2346993035, 3908602128, 4294967004, 82068867, 1827272241, 2432696319, 2346993035, 79725360, 2246329737, 2321183990, 1959953430, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (2319908863)
+Error <inode      >: addrs out of bounds direct reference. (1976730646)
+Error <inode      >: addrs out of bounds direct reference. (3925225967)
+Error <inode      >: addrs out of bounds direct reference. (4294967099)
+Error <inode      >: addrs out of bounds direct reference. (266618251)
+Error <inode      >: addrs out of bounds direct reference. (4169732286)
+Error <inode      >: addrs out of bounds direct reference. (4294864872)
+Error <inode      >: addrs out of bounds direct reference. (3829761023)
+Error <inode      >: addrs out of bounds direct reference. (3925225732)
+Error <inode      >: addrs out of bounds direct reference. (4294967075)
+Error <inode      >: addrs out of bounds direct reference. (19137735)
+Error <inode      >: addrs out of bounds direct reference. (2969567232)
+Error <inode      >: addrs out of bounds direct reference. (3829762826)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(36116)
+major: 118
+minor: 48655
+nlink: 35282
+size: 4270516472
+addrs: [2319908863, 1976730646, 3925225967, 4294967099, 266618251, 4169732286, 4294864872, 3829761023, 3925225732, 4294967075, 19137735, 2969567232, 3829762826, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (4130432516)
+Error <inode      >: addrs out of bounds direct reference. (4294902505)
+Error <inode      >: addrs out of bounds direct reference. (114474751)
+Error <inode      >: addrs out of bounds direct reference. (2682978304)
+Error <inode      >: addrs out of bounds direct reference. (1474660693)
+Error <inode      >: addrs out of bounds direct reference. (1569411926)
+Error <inode      >: addrs out of bounds direct reference. (4165700872)
+Error <inode      >: addrs out of bounds direct reference. (639137)
+Error <inode      >: addrs out of bounds direct reference. (7769344)
+Error <inode      >: addrs out of bounds direct reference. (3359182987)
+Error <inode      >: addrs out of bounds direct reference. (3510174835)
+Error <inode      >: addrs out of bounds direct reference. (3493401202)
+Error <inode      >: addrs out of bounds direct reference. (3359180914)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(4235)
+major: 63625
+minor: 29672
+nlink: 65534
+size: 3829761023
+addrs: [4130432516, 4294902505, 114474751, 2682978304, 1474660693, 1569411926, 4165700872, 639137, 7769344, 3359182987, 3510174835, 3493401202, 3359180914, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (2382132107)
+Error <inode      >: addrs out of bounds direct reference. (3610898748)
+Error <inode      >: addrs out of bounds direct reference. (1401493876)
+Error <inode      >: addrs out of bounds direct reference. (72387576)
+Error <inode      >: addrs out of bounds direct reference. (969946253)
+Error <inode      >: addrs out of bounds direct reference. (2300802289)
+Error <inode      >: addrs out of bounds direct reference. (163619592)
+Error <inode      >: addrs out of bounds direct reference. (1583022080)
+Error <inode      >: addrs out of bounds direct reference. (63135071)
+Error <inode      >: addrs out of bounds direct reference. (1938359410)
+Error <inode      >: addrs out of bounds direct reference. (2333117436)
+Error <inode      >: addrs out of bounds direct reference. (4166224146)
+Error <inode      >: addrs out of bounds direct reference. (2365870219)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(2674)
+major: 53561
+minor: 1650
+nlink: 53385
+size: 2422662891
+addrs: [2382132107, 3610898748, 1401493876, 72387576, 969946253, 2300802289, 163619592, 1583022080, 63135071, 1938359410, 2333117436, 4166224146, 2365870219, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (2314752907)
+Error <inode      >: addrs out of bounds direct reference. (163619600)
+Error <inode      >: addrs out of bounds direct reference. (1583022080)
+Error <inode      >: addrs out of bounds direct reference. (2428722527)
+Error <inode      >: addrs out of bounds direct reference. (1474660693)
+Error <inode      >: addrs out of bounds direct reference. (3968029526)
+Error <inode      >: addrs out of bounds direct reference. (140348188)
+Error <inode      >: addrs out of bounds direct reference. (3238511491)
+Error <inode      >: addrs out of bounds direct reference. (2336424939)
+Error <inode      >: addrs out of bounds direct reference. (638989)
+Error <inode      >: addrs out of bounds direct reference. (264865024)
+Error <inode      >: addrs out of bounds direct reference. (38276)
+Error <inode      >: addrs out of bounds direct reference. (2332134144)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(53300)
+major: 61753
+minor: 56693
+nlink: 21251
+size: 72387068
+addrs: [2314752907, 163619600, 1583022080, 2428722527, 1474660693, 3968029526, 140348188, 3238511491, 2336424939, 638989, 264865024, 38276, 2332134144, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (2416765696)
+Error <inode      >: addrs out of bounds direct reference. (25936265)
+Error <inode      >: addrs out of bounds direct reference. (956584075)
+Error <inode      >: addrs out of bounds direct reference. (995194579)
+Error <inode      >: addrs out of bounds direct reference. (638981)
+Error <inode      >: addrs out of bounds direct reference. (2179822848)
+Error <inode      >: addrs out of bounds direct reference. (1048571)
+Error <inode      >: addrs out of bounds direct reference. (2301982208)
+Error <inode      >: addrs out of bounds direct reference. (2313062904)
+Error <inode      >: addrs out of bounds direct reference. (1239950340)
+Error <inode      >: addrs out of bounds direct reference. (2214592509)
+Error <inode      >: addrs out of bounds direct reference. (410320888)
+Error <inode      >: addrs out of bounds direct reference. (2198106249)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(1104)
+major: 55865
+minor: 26227
+nlink: 15501
+size: 221
+addrs: [2416765696, 25936265, 956584075, 995194579, 638981, 2179822848, 1048571, 2301982208, 2313062904, 1239950340, 2214592509, 410320888, 2198106249, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (2496)
+Error <inode      >: addrs out of bounds direct reference. (3195390341)
+Error <inode      >: addrs out of bounds direct reference. (3296968753)
+Error <inode      >: addrs out of bounds direct reference. (1600019228)
+Error <inode      >: addrs out of bounds direct reference. (2422653789)
+Error <inode      >: addrs out of bounds direct reference. (8388792)
+Error <inode      >: addrs out of bounds direct reference. (268484096)
+Error <inode      >: addrs out of bounds direct reference. (3286958080)
+Error <inode      >: addrs out of bounds direct reference. (477418297)
+Error <inode      >: addrs out of bounds direct reference. (1351211561)
+Error <inode      >: addrs out of bounds direct reference. (3489959172)
+Error <inode      >: addrs out of bounds direct reference. (2298763401)
+Error <inode      >: addrs out of bounds direct reference. (638989)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(2240)
+major: 1161
+minor: 59428
+nlink: 65298
+size: 227278847
+addrs: [2496, 3195390341, 3296968753, 1600019228, 2422653789, 8388792, 268484096, 3286958080, 477418297, 1351211561, 3489959172, 2298763401, 638989, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (294195339)
+Error <inode      >: addrs out of bounds direct reference. (96987627)
+Error <inode      >: addrs out of bounds direct reference. (2496)
+Error <inode      >: addrs out of bounds direct reference. (2500)
+Error <inode      >: addrs out of bounds direct reference. (163841479)
+Error <inode      >: addrs out of bounds direct reference. (163840000)
+Error <inode      >: addrs out of bounds direct reference. (96927744)
+Error <inode      >: addrs out of bounds direct reference. (2504)
+Error <inode      >: addrs out of bounds direct reference. (640184)
+Error <inode      >: addrs out of bounds direct reference. (4283230464)
+Error <inode      >: addrs out of bounds direct reference. (1633943551)
+Error <inode      >: addrs out of bounds direct reference. (1998600820)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(33536)
+major: 2240
+minor: 50307
+nlink: 23324
+size: 3277676382
+addrs: [294195339, 96987627, 2496, 2500, 163841479, 163840000, 96927744, 2504, 0, 640184, 4283230464, 1633943551, 1998600820, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (980705635)
+Error <inode      >: addrs out of bounds direct reference. (1634038304)
+Error <inode      >: addrs out of bounds direct reference. (1919230052)
+Error <inode      >: addrs out of bounds direct reference. (175271794)
+Error <inode      >: addrs out of bounds direct reference. (1952539392)
+Error <inode      >: addrs out of bounds direct reference. (1633886266)
+Error <inode      >: addrs out of bounds direct reference. (1953459822)
+Error <inode      >: addrs out of bounds direct reference. (1701867296)
+Error <inode      >: addrs out of bounds direct reference. (1931812974)
+Error <inode      >: addrs out of bounds direct reference. (1848115210)
+Error <inode      >: addrs out of bounds direct reference. (694971509)
+Error <inode      >: addrs out of bounds direct reference. (842084352)
+Error <inode      >: addrs out of bounds direct reference. (909456435)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(26994)
+major: 25972
+minor: 25888
+nlink: 29298
+size: 684655
+addrs: [980705635, 1634038304, 1919230052, 175271794, 1952539392, 1633886266, 1953459822, 1701867296, 1931812974, 1848115210, 694971509, 842084352, 909456435, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (20)
+Error <inode      >: addrs out of bounds direct reference. (5405185)
+Error <inode      >: addrs out of bounds direct reference. (17333249)
+Error <inode      >: addrs out of bounds direct reference. (67374107)
+Error <inode      >: addrs out of bounds direct reference. (40)
+Error <inode      >: addrs out of bounds direct reference. (28)
+Error <inode      >: addrs out of bounds direct reference. (4294965632)
+Error <inode      >: addrs out of bounds direct reference. (135151872)
+Error <inode      >: addrs out of bounds direct reference. (222429829)
+Error <inode      >: addrs out of bounds direct reference. (75712517)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(14391)
+major: 16697
+minor: 17218
+nlink: 17732
+size: 70
+addrs: [20, 0, 5405185, 17333249, 67374107, 392, 40, 28, 4294965632, 134, 135151872, 222429829, 75712517, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (737733)
+Error <inode      >: addrs out of bounds direct reference. (28)
+Error <inode      >: addrs out of bounds direct reference. (4294965448)
+Error <inode      >: addrs out of bounds direct reference. (135151872)
+Error <inode      >: addrs out of bounds direct reference. (222429829)
+Error <inode      >: addrs out of bounds direct reference. (92490757)
+Error <inode      >: addrs out of bounds direct reference. (59180166)
+Error <inode      >: addrs out of bounds direct reference. (32)
+Error <inode      >: addrs out of bounds direct reference. (4294965692)
+Error <inode      >: addrs out of bounds direct reference. (26)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(902)
+major: 17922
+minor: 49930
+nlink: 50753
+size: 67374145
+addrs: [737733, 28, 72, 4294965448, 139, 135151872, 222429829, 92490757, 59180166, 32, 104, 4294965692, 26, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (205636430)
+Error <inode      >: addrs out of bounds direct reference. (12911620)
+Error <inode      >: addrs out of bounds direct reference. (48)
+Error <inode      >: addrs out of bounds direct reference. (4294965684)
+Error <inode      >: addrs out of bounds direct reference. (135151872)
+Error <inode      >: addrs out of bounds direct reference. (222429829)
+Error <inode      >: addrs out of bounds direct reference. (75713541)
+Error <inode      >: addrs out of bounds direct reference. (174654342)
+Error <inode      >: addrs out of bounds direct reference. (1103512003)
+Error <inode      >: addrs out of bounds direct reference. (3305374732)
+Error <inode      >: addrs out of bounds direct reference. (3276344130)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(16640)
+major: 2062
+minor: 645
+nlink: 3394
+size: 58935045
+addrs: [205636430, 12911620, 48, 140, 4294965684, 72, 135151872, 222429829, 75713541, 174654342, 1103512003, 3305374732, 3276344130, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (4294965704)
+Error <inode      >: addrs out of bounds direct reference. (31)
+Error <inode      >: addrs out of bounds direct reference. (135151872)
+Error <inode      >: addrs out of bounds direct reference. (222429829)
+Error <inode      >: addrs out of bounds direct reference. (202004229)
+Error <inode      >: addrs out of bounds direct reference. (1103430660)
+Error <inode      >: addrs out of bounds direct reference. (214254347)
+Error <inode      >: addrs out of bounds direct reference. (1028)
+Error <inode      >: addrs out of bounds direct reference. (32)
+Error <inode      >: addrs out of bounds direct reference. (4294965696)
+Error <inode      >: addrs out of bounds direct reference. (23)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(50753)
+major: 50497
+minor: 1036
+nlink: 4
+size: 36
+addrs: [192, 4294965704, 31, 135151872, 222429829, 202004229, 1103430660, 214254347, 1028, 32, 232, 4294965696, 23, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (205637452)
+Error <inode      >: addrs out of bounds direct reference. (12911620)
+Error <inode      >: addrs out of bounds direct reference. (36)
+Error <inode      >: addrs out of bounds direct reference. (4294965684)
+Error <inode      >: addrs out of bounds direct reference. (40)
+Error <inode      >: addrs out of bounds direct reference. (135151872)
+Error <inode      >: addrs out of bounds direct reference. (222429829)
+Error <inode      >: addrs out of bounds direct reference. (202006021)
+Error <inode      >: addrs out of bounds direct reference. (1136985092)
+Error <inode      >: addrs out of bounds direct reference. (214254347)
+Error <inode      >: addrs out of bounds direct reference. (1028)
+Error <inode      >: addrs out of bounds direct reference. (40)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(16640)
+major: 2062
+minor: 645
+nlink: 3394
+size: 59196933
+addrs: [205637452, 12911620, 36, 268, 4294965684, 40, 135151872, 222429829, 202006021, 1136985092, 214254347, 1028, 40, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (135151872)
+Error <inode      >: addrs out of bounds direct reference. (222429829)
+Error <inode      >: addrs out of bounds direct reference. (92489989)
+Error <inode      >: addrs out of bounds direct reference. (59180166)
+Error <inode      >: addrs out of bounds direct reference. (1103316482)
+Error <inode      >: addrs out of bounds direct reference. (1103577542)
+Error <inode      >: addrs out of bounds direct reference. (3305374732)
+Error <inode      >: addrs out of bounds direct reference. (40)
+Error <inode      >: addrs out of bounds direct reference. (4294965728)
+Error <inode      >: addrs out of bounds direct reference. (135151872)
+Error <inode      >: addrs out of bounds direct reference. (222429829)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(308)
+major: 0
+minor: 63924
+nlink: 65535
+size: 86
+addrs: [135151872, 222429829, 92489989, 59180166, 1103316482, 1103577542, 3305374732, 40, 352, 4294965728, 75, 135151872, 222429829, ]
+Error <inode      >: Unknown 'type'.
+Error <inode      >: addrs out of bounds direct reference. (3305374732)
+Error <inode      >: addrs out of bounds direct reference. (2882)
+Error <inode      >: addrs out of bounds direct reference. (32)
+Error <inode      >: addrs out of bounds direct reference. (4294965760)
+Error <inode      >: addrs out of bounds direct reference. (48)
+Error <inode      >: addrs out of bounds direct reference. (135151872)
+Error <inode      >: addrs out of bounds direct reference. (222429829)
+Error <inode      >: addrs out of bounds direct reference. (58937861)
+Error <inode      >: addrs out of bounds direct reference. (205636441)
+Error <inode      >: addrs out of bounds direct reference. (12911620)
+Error <inode      >: addrs out of bounds direct reference. (36)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: addrs out of bounds indirect reference. (432)
+Error <inode      >: 'size' is invalid.
+type: ERROR_UNKNOWN(21253)
+major: 1155
+minor: 902
+nlink: 2666
+size: 1103512003
+addrs: [3305374732, 2882, 32, 396, 4294965760, 48, 135151872, 222429829, 58937861, 205636441, 12911620, 36, 432, ]
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+inode test: failed
+	Found 90 type errors.
+	Found 70 directory errors.
+	Found 1177 address error.
+	Found 74 size errors.
+----------------------------------------------------------------
+bmap test: passed
+----------------------------------------------------------------
+directory test: passed
+****************************************************************
+
+****************************************************************
+sample\fs07.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 0
+addrs: [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, ]
+inode test: failed
+	Found 1 size errors.
+----------------------------------------------------------------
+Error <bmap       >: Incorrect 'used' status error. (65)
+Error <bmap       >: Incorrect 'used' status error. (66)
+Error <bmap       >: Incorrect 'used' status error. (67)
+Error <bmap       >: Incorrect 'used' status error. (68)
+Error <bmap       >: Incorrect 'used' status error. (69)
+Error <bmap       >: Incorrect 'used' status error. (70)
+Error <bmap       >: Incorrect 'used' status error. (71)
+Error <bmap       >: Incorrect 'used' status error. (72)
+Error <bmap       >: Incorrect 'used' status error. (73)
+Error <bmap       >: Incorrect 'used' status error. (74)
+Error <bmap       >: Incorrect 'used' status error. (75)
+Error <bmap       >: Incorrect 'used' status error. (76)
+Error <bmap       >: Incorrect 'used' status error. (77)
+Error <bmap       >: Incorrect 'used' status error. (78)
+Error <bmap       >: Incorrect 'used' status error. (79)
+Error <bmap       >: Incorrect 'used' status error. (80)
+Error <bmap       >: Incorrect 'used' status error. (81)
+Error <bmap       >: Incorrect 'used' status error. (82)
+Error <bmap       >: Incorrect 'used' status error. (83)
+Error <bmap       >: Incorrect 'used' status error. (84)
+Error <bmap       >: Incorrect 'used' status error. (85)
+Error <bmap       >: Incorrect 'used' status error. (86)
+Error <bmap       >: Incorrect 'used' status error. (87)
+Error <bmap       >: Incorrect 'used' status error. (88)
+Error <bmap       >: Incorrect 'used' status error. (89)
+bmap test: failed
+	Found 25 incorrect 'used' flag errors.
+----------------------------------------------------------------
+Error <directory  >: Directory referenced unused or invalid inode.
+directory test: failed
+	Found 1 inode reference errors.
+****************************************************************
+
+****************************************************************
+sample\fs08.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: passed
+----------------------------------------------------------------
+Error <bmap       >: Incorrect 'used' status error. (61)
+Error <bmap       >: Multiple reference error. (63)
+bmap test: failed
+	Found 1 inode multiple reference error.
+	Found 1 incorrect 'used' flag errors.
+----------------------------------------------------------------
+directory test: passed
+****************************************************************
+
+****************************************************************
+sample\fs09.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+Error <inode      >: Incorrect 'nlink'
+inode test: failed
+	Found 1 directory errors.
+----------------------------------------------------------------
+bmap test: passed
+----------------------------------------------------------------
+directory test: passed
+****************************************************************
+
+****************************************************************
+sample\fs10.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+Error <inode      >: addrs referenced unused block. (800)
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 2327
+addrs: [60, 61, 62, 800, 64, 0, 0, 0, 0, 0, 0, 0, 0, ]
+inode test: failed
+	Found 1 address error.
+	Found 1 size errors.
+----------------------------------------------------------------
+Error <bmap       >: Incorrect 'used' status error. (60)
+Error <bmap       >: Incorrect 'used' status error. (61)
+Error <bmap       >: Incorrect 'used' status error. (62)
+Error <bmap       >: Incorrect 'used' status error. (63)
+Error <bmap       >: Incorrect 'used' status error. (64)
+bmap test: failed
+	Found 5 incorrect 'used' flag errors.
+----------------------------------------------------------------
+Error <directory  >: Directory referenced unused or invalid inode.
+directory test: failed
+	Found 1 inode reference errors.
+****************************************************************
+
+****************************************************************
+sample\fs11.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+Error <inode      >: Incorrect 'nlink' at root
+Error <inode      >: Incorrect 'nlink'
+inode test: failed
+	Found 2 directory errors.
+----------------------------------------------------------------
+bmap test: passed
+----------------------------------------------------------------
+Error <directory  >: '..' does not point to self for root directory.
+Error <directory  >: Missing '.', '..' reference.
+inum : 1
+name: .             
+inum : 18
+name: ..            
+inum : 2
+name: README        
+inum : 3
+name: cat           
+inum : 4
+name: echo          
+inum : 5
+name: forktest      
+inum : 6
+name: grep          
+inum : 7
+name: init          
+inum : 8
+name: kill          
+inum : 9
+name: ln            
+inum : 10
+name: ls            
+inum : 11
+name: mkdir         
+inum : 12
+name: rm            
+inum : 13
+name: sh            
+inum : 14
+name: stressfs      
+inum : 15
+name: usertests     
+inum : 16
+name: wc            
+inum : 17
+name: zombie        
+Error <directory  >: Missing '.', '..' reference.
+inum : 18
+name: .             
+inum : 1
+name: ..            
+inum : 19
+name: LICENSE       
+directory test: failed
+	Found 3 error with '.' and '..' references.
+****************************************************************
+
+****************************************************************
+sample\fs12.img:
+----------------------------------------------------------------
+Error <super block>: 'size' does not match actual file size.
+Error <super block>: 'bmapstart' is corrupted.
+Error <super block>: 'size' contradicts the total block count calculated from other data.
+super block test: failed
+	Found size error.
+	Found inconsistencies with block count and block start.
+----------------------------------------------------------------
+Error <inode      >: addrs out of bounds direct reference. (59)
+Error <inode      >: 'size' is invalid.
+type: T_DIR
+major: 0
+minor: 0
+nlink: 1
+size: 512
+addrs: [59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ]
+Error <inode      >: addrs out of bounds direct reference. (60)
+Error <inode      >: addrs out of bounds direct reference. (61)
+Error <inode      >: addrs out of bounds direct reference. (62)
+Error <inode      >: addrs out of bounds direct reference. (63)
+Error <inode      >: addrs out of bounds direct reference. (64)
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 4000
+addrs: [60, 61, 62, 63, 64, 0, 0, 0, 0, 0, 0, 0, 0, ]
+Error <inode      >: addrs out of bounds direct reference. (65)
+Error <inode      >: addrs out of bounds direct reference. (66)
+Error <inode      >: addrs out of bounds direct reference. (67)
+Error <inode      >: addrs out of bounds direct reference. (68)
+Error <inode      >: addrs out of bounds direct reference. (69)
+Error <inode      >: addrs out of bounds direct reference. (70)
+Error <inode      >: addrs out of bounds direct reference. (71)
+Error <inode      >: addrs out of bounds direct reference. (72)
+Error <inode      >: addrs out of bounds direct reference. (73)
+Error <inode      >: addrs out of bounds direct reference. (74)
+Error <inode      >: addrs out of bounds direct reference. (75)
+Error <inode      >: addrs out of bounds direct reference. (76)
+Error <inode      >: addrs out of bounds direct reference. (77)
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 12184
+addrs: [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, ]
+Error <inode      >: addrs referenced unused block. (200)
+Error <inode      >: 'size' is invalid.
+type: T_FILE
+major: 0
+minor: 0
+nlink: 1
+size: 11293
+addrs: [181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, ]
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+Error <inode      >: Incorrect 'nlink'
+inode test: failed
+	Found 16 directory errors.
+	Found 20 address error.
+	Found 4 size errors.
+----------------------------------------------------------------
+Error <bmap       >: Incorrect 'used' status error. (83)
+Error <bmap       >: Incorrect 'used' status error. (84)
+Error <bmap       >: Incorrect 'used' status error. (85)
+Error <bmap       >: Incorrect 'used' status error. (86)
+Error <bmap       >: Incorrect 'used' status error. (87)
+Error <bmap       >: Incorrect 'used' status error. (88)
+Error <bmap       >: Incorrect 'used' status error. (89)
+Error <bmap       >: Incorrect 'used' status error. (181)
+Error <bmap       >: Incorrect 'used' status error. (182)
+Error <bmap       >: Incorrect 'used' status error. (183)
+Error <bmap       >: Incorrect 'used' status error. (184)
+Error <bmap       >: Incorrect 'used' status error. (185)
+Error <bmap       >: Incorrect 'used' status error. (186)
+Error <bmap       >: Incorrect 'used' status error. (187)
+Error <bmap       >: Incorrect 'used' status error. (188)
+Error <bmap       >: Incorrect 'used' status error. (189)
+Error <bmap       >: Incorrect 'used' status error. (190)
+Error <bmap       >: Incorrect 'used' status error. (191)
+Error <bmap       >: Incorrect 'used' status error. (192)
+Error <bmap       >: Incorrect 'used' status error. (193)
+Error <bmap       >: Incorrect 'used' status error. (194)
+Error <bmap       >: Incorrect 'used' status error. (195)
+Error <bmap       >: Incorrect 'used' status error. (196)
+Error <bmap       >: Incorrect 'used' status error. (197)
+Error <bmap       >: Incorrect 'used' status error. (198)
+Error <bmap       >: Incorrect 'used' status error. (199)
+Error <bmap       >: Incorrect 'used' status error. (201)
+Error <bmap       >: Incorrect 'used' status error. (202)
+Error <bmap       >: Incorrect 'used' status error. (203)
+Error <bmap       >: Incorrect 'used' status error. (204)
+Error <bmap       >: Multiple reference error. (250)
+Error <bmap       >: Incorrect 'used' status error. (260)
+bmap test: failed
+	Found 1 inode multiple reference error.
+	Found 31 incorrect 'used' flag errors.
+----------------------------------------------------------------
+directory test: passed
+****************************************************************

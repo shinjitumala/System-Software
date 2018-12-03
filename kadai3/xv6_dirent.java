@@ -18,4 +18,9 @@ public class xv6_dirent {
       throw new IllegalArgumentException();
     }
   }
+
+  @Override
+  public String toString() {
+    return "inum : " + inum + "\nname: " + new String(name);
+  }
 }

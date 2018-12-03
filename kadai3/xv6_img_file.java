@@ -100,12 +100,6 @@ public class xv6_img_file {
     System.out.println(directory_test());
     System.out.println("****************************************************************");
     System.out.println();
-
-    // else {
-    // System.err.println("Not implemented.");
-    // System.exit(1);
-    // }
-
   }
 
   /**
@@ -637,6 +631,9 @@ public class xv6_img_file {
         if (!(dot && dot_dot)) {
           System.err.println("Error <directory  >: Missing '.', '..' reference.");
           directory_self_parent_error++;
+          for (xv6_dirent d : inode.dirents) {
+            System.out.println(d);
+          }
         }
       }
     }

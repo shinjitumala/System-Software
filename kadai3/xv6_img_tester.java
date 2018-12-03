@@ -7,10 +7,8 @@ public class xv6_img_tester {
       // test all .img files
       try {
         for (int i = 1; i < 13; i++) {
-          String path = "sample/fs" + extend(i) + ".img";
-          // System.err.close();
-          xv6_img_file test_file = new xv6_img_file(path);
-          // System.out.println(test_file);
+          String path = "sample\\fs" + extend(i) + ".img";
+          new xv6_img_file(path);
         }
       } catch (IOException | InterruptedException e) {
         System.err.println("Error reading file!");
@@ -22,10 +20,9 @@ public class xv6_img_tester {
       // output raw data of all .img files
       try {
         for (int i = 1; i < 13; i++) {
-          String path = "sample/fs" + extend(i) + ".img";
-          String output_path = "output/fs" + extend(i) + "_raw.txt";
+          String path = "sample\\fs" + extend(i) + ".img";
+          String output_path = "output\\fs" + extend(i) + "_raw.txt";
           PrintWriter file = new PrintWriter(output_path);
-          // System.err.close();
           xv6_img_file test_file = new xv6_img_file(path);
           file.println(path + ":");
           for (int k = 0; k < 1000; k++) {
@@ -46,14 +43,12 @@ public class xv6_img_tester {
 
     } else {
       // test a specific .img file.
-      xv6_img_file test_file = null;
       try {
-        test_file = new xv6_img_file(args[0]);
+        new xv6_img_file(args[0]);
       } catch (IOException | InterruptedException e) {
         System.out.println("Error reading file!");
         System.exit(1);
       }
-      System.out.println(test_file);
     }
   }
 

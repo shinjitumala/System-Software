@@ -1,0 +1,232 @@
+****************************************************************
+sample\fs01.img:
+----------------------------------------------------------------
+super block test: failed
+	Found inconsistencies with block count and block start.
+----------------------------------------------------------------
+inode test: failed
+	Found 7 type errors.
+	Found 2 directory errors.
+	Found 37 address error.
+	Found 2 size errors.
+----------------------------------------------------------------
+bmap test: failed
+	Found 0 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 460 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs02.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: passed
+	Found 0 type errors.
+	Found 0 directory errors.
+	Found 0 address error.
+	Found 0 size errors.
+----------------------------------------------------------------
+bmap test: failed
+	Found 0 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 1 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs03.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: passed
+	Found 0 type errors.
+	Found 0 directory errors.
+	Found 0 address error.
+	Found 0 size errors.
+----------------------------------------------------------------
+bmap test: passed
+	Found 0 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 0 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs04.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: failed
+	Found 0 type errors.
+	Found 0 directory errors.
+	Found 1 address error.
+	Found 1 size errors.
+----------------------------------------------------------------
+bmap test: failed
+	Found 0 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 23 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs05.img:
+----------------------------------------------------------------
+super block test: failed
+	Found size error.
+----------------------------------------------------------------
+inode test: failed
+	Found 0 type errors.
+	Found 0 directory errors.
+	Found 7 address error.
+	Found 15 size errors.
+----------------------------------------------------------------
+bmap test: failed
+	Test failed due to critical data corruption in super block.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs06.img:
+----------------------------------------------------------------
+super block test: failed
+	Found size error.
+	Found inconsistencies with block count and block start.
+----------------------------------------------------------------
+inode test: failed
+	Found 90 type errors.
+	Found 70 directory errors.
+	Found 1177 address error.
+	Found 74 size errors.
+----------------------------------------------------------------
+bmap test: passed
+	Found 0 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 0 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs07.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: failed
+	Found 0 type errors.
+	Found 0 directory errors.
+	Found 0 address error.
+	Found 1 size errors.
+----------------------------------------------------------------
+bmap test: failed
+	Found 0 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 25 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs08.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: passed
+	Found 0 type errors.
+	Found 0 directory errors.
+	Found 0 address error.
+	Found 0 size errors.
+----------------------------------------------------------------
+bmap test: failed
+	Found 1 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 1 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs09.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: failed
+	Found 0 type errors.
+	Found 1 directory errors.
+	Found 0 address error.
+	Found 0 size errors.
+----------------------------------------------------------------
+bmap test: passed
+	Found 0 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 0 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs10.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: failed
+	Found 0 type errors.
+	Found 0 directory errors.
+	Found 1 address error.
+	Found 1 size errors.
+----------------------------------------------------------------
+bmap test: failed
+	Found 0 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 5 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs11.img:
+----------------------------------------------------------------
+super block test: passed
+----------------------------------------------------------------
+inode test: failed
+	Found 0 type errors.
+	Found 2 directory errors.
+	Found 0 address error.
+	Found 0 size errors.
+----------------------------------------------------------------
+bmap test: passed
+	Found 0 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 0 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
+****************************************************************
+sample\fs12.img:
+----------------------------------------------------------------
+super block test: failed
+	Found size error.
+	Found inconsistencies with block count and block start.
+----------------------------------------------------------------
+inode test: failed
+	Found 0 type errors.
+	Found 16 directory errors.
+	Found 20 address error.
+	Found 4 size errors.
+----------------------------------------------------------------
+bmap test: failed
+	Found 1 inode multiple reference error.
+	Found 0 incorrect 'unused' flag errors.
+	Found 31 incorrect 'used' flag errors.
+----------------------------------------------------------------
+
+****************************************************************
+
