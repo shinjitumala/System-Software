@@ -632,7 +632,7 @@ public class xv6_img_file {
           System.err.println("Error <directory  >: Missing '.', '..' reference.");
           directory_self_parent_error++;
           for (xv6_dirent d : inode.dirents) {
-            System.out.println(d);
+            System.err.println(d);
           }
         }
       }
